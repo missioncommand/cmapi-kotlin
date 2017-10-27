@@ -4,5 +4,13 @@ import java.util.*
 
 actual class MpUUID actual constructor()
 {
-    actual fun getRandomUUID() : String = UUID.randomUUID().toString()
+    constructor(mostSignificantBits: Long, leastSignificantBits: Long) : this()
+    {
+        uuid = UUID(mostSignificantBits, leastSignificantBits)
+    }
+
+    var uuid : UUID = java.util.UUID.randomUUID()
+        private set
+
+    actual fun getRandomUUID() : String = uuid.toString()
 }

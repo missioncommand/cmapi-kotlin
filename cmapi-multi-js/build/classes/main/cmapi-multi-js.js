@@ -5,6 +5,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   'use strict';
   var Kind_CLASS = Kotlin.Kind.CLASS;
   var HashMap_init = Kotlin.kotlin.collections.HashMap_init_q3lmfv$;
+  var Any = Object;
   var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_ww73n8$;
   var Enum = Kotlin.kotlin.Enum;
   var throwISE = Kotlin.throwISE;
@@ -19,12 +20,22 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   GeoCamera.prototype.constructor = GeoCamera;
   GeoCircle.prototype = Object.create(GeoRenderable.prototype);
   GeoCircle.prototype.constructor = GeoCircle;
+  GeoClusterStrategy.prototype = Object.create(GeoBase.prototype);
+  GeoClusterStrategy.prototype.constructor = GeoClusterStrategy;
   GeoDocument.prototype = Object.create(GeoBase.prototype);
   GeoDocument.prototype.constructor = GeoDocument;
+  GeoDocumentLink.prototype = Object.create(GeoBase.prototype);
+  GeoDocumentLink.prototype.constructor = GeoDocumentLink;
+  GeoService.prototype = Object.create(GeoBase.prototype);
+  GeoService.prototype.constructor = GeoService;
+  GeoESRIRest.prototype = Object.create(GeoService.prototype);
+  GeoESRIRest.prototype.constructor = GeoESRIRest;
   GeoEllipse.prototype = Object.create(GeoRenderable.prototype);
   GeoEllipse.prototype.constructor = GeoEllipse;
   GeoImageOverlay.prototype = Object.create(GeoRenderable.prototype);
   GeoImageOverlay.prototype.constructor = GeoImageOverlay;
+  GeoInstance.prototype = Object.create(GeoBase.prototype);
+  GeoInstance.prototype.constructor = GeoInstance;
   GeoLookAt.prototype = Object.create(GeoBase.prototype);
   GeoLookAt.prototype.constructor = GeoLookAt;
   GeoMilSymbol.prototype = Object.create(GeoRenderable.prototype);
@@ -41,8 +52,18 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   GeoRectangle.prototype.constructor = GeoRectangle;
   GeoSquare.prototype = Object.create(GeoRenderable.prototype);
   GeoSquare.prototype.constructor = GeoSquare;
+  GeoTMS.prototype = Object.create(GeoService.prototype);
+  GeoTMS.prototype.constructor = GeoTMS;
   GeoText.prototype = Object.create(GeoRenderable.prototype);
   GeoText.prototype.constructor = GeoText;
+  GeoWCS.prototype = Object.create(GeoService.prototype);
+  GeoWCS.prototype.constructor = GeoWCS;
+  GeoWFS.prototype = Object.create(GeoService.prototype);
+  GeoWFS.prototype.constructor = GeoWFS;
+  GeoWMS.prototype = Object.create(GeoService.prototype);
+  GeoWMS.prototype.constructor = GeoWMS;
+  GeoWMTS.prototype = Object.create(GeoService.prototype);
+  GeoWMTS.prototype.constructor = GeoWMTS;
   IGeoAirControlMeasure$Attribute.prototype = Object.create(Enum.prototype);
   IGeoAirControlMeasure$Attribute.prototype.constructor = IGeoAirControlMeasure$Attribute;
   IGeoAirControlMeasure$AcmType.prototype = Object.create(Enum.prototype);
@@ -79,27 +100,9 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoAirControlMeasure() {
     GeoRenderable.call(this);
-    this.children_rl2g2p$_0 = ArrayList_init();
-    this.timeStamp_6t8ttu$_0 = new Date();
     this.acmType_6kx4hb$_0 = IGeoAirControlMeasure$AcmType$TRACK_getInstance();
     this.attributes_giuhah$_0 = HashMap_init();
   }
-  Object.defineProperty(GeoAirControlMeasure.prototype, 'children', {
-    get: function () {
-      return this.children_rl2g2p$_0;
-    },
-    set: function (children) {
-      this.children_rl2g2p$_0 = children;
-    }
-  });
-  Object.defineProperty(GeoAirControlMeasure.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_6t8ttu$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_6t8ttu$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoAirControlMeasure.prototype, 'acmType', {
     get: function () {
       return this.acmType_6kx4hb$_0;
@@ -138,23 +141,26 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     interfaces: [IGeoAltitudeMode]
   };
   function GeoBase() {
-    this.id_cnvqgp$_0 = (new MpUUID()).getRandomUUID();
     this.name_nam85l$_0 = '';
+    this.geoId_8kx0xg$_0 = new MpUUID();
     this.dataProviderId_b15mgy$_0 = '';
     this.description_syxwhw$_0 = '';
     this.properties_1hnzc1$_0 = HashMap_init();
   }
-  Object.defineProperty(GeoBase.prototype, 'id', {
-    get: function () {
-      return this.id_cnvqgp$_0;
-    }
-  });
   Object.defineProperty(GeoBase.prototype, 'name', {
     get: function () {
       return this.name_nam85l$_0;
     },
     set: function (name) {
       this.name_nam85l$_0 = name;
+    }
+  });
+  Object.defineProperty(GeoBase.prototype, 'geoId', {
+    get: function () {
+      return this.geoId_8kx0xg$_0;
+    },
+    set: function (geoId) {
+      this.geoId_8kx0xg$_0 = geoId;
     }
   });
   Object.defineProperty(GeoBase.prototype, 'dataProviderId', {
@@ -176,9 +182,6 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   Object.defineProperty(GeoBase.prototype, 'properties', {
     get: function () {
       return this.properties_1hnzc1$_0;
-    },
-    set: function (properties) {
-      this.properties_1hnzc1$_0 = properties;
     }
   });
   GeoBase.$metadata$ = {
@@ -302,26 +305,8 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoCircle() {
     GeoRenderable.call(this);
-    this.children_943qdw$_0 = ArrayList_init();
-    this.timeStamp_b68idx$_0 = new Date();
     this.radius_u8i07z$_0 = 100.0;
   }
-  Object.defineProperty(GeoCircle.prototype, 'children', {
-    get: function () {
-      return this.children_943qdw$_0;
-    },
-    set: function (children) {
-      this.children_943qdw$_0 = children;
-    }
-  });
-  Object.defineProperty(GeoCircle.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_b68idx$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_b68idx$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoCircle.prototype, 'radius', {
     get: function () {
       return this.radius_u8i07z$_0;
@@ -334,6 +319,118 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     kind: Kind_CLASS,
     simpleName: 'GeoCircle',
     interfaces: [IGeoCircle, GeoRenderable]
+  };
+  function GeoClusterPointStyle() {
+    this.color_vw8b3z$_0 = new GeoColor();
+    this.radius_5zwi3i$_0 = 6.0;
+  }
+  Object.defineProperty(GeoClusterPointStyle.prototype, 'color', {
+    get: function () {
+      return this.color_vw8b3z$_0;
+    },
+    set: function (color) {
+      this.color_vw8b3z$_0 = color;
+    }
+  });
+  Object.defineProperty(GeoClusterPointStyle.prototype, 'radius', {
+    get: function () {
+      return this.radius_5zwi3i$_0;
+    },
+    set: function (radius) {
+      this.radius_5zwi3i$_0 = radius;
+    }
+  });
+  GeoClusterPointStyle.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoClusterPointStyle',
+    interfaces: [IGeoClusterPointStyle]
+  };
+  function GeoClusterStrategy() {
+    GeoBase.call(this);
+    this.threshold_ezurax$_0 = '2';
+    this.distance_h5k3wt$_0 = '50';
+    this.clusterStyle_glbfth$_0 = new GeoClusterStyle();
+  }
+  Object.defineProperty(GeoClusterStrategy.prototype, 'threshold', {
+    get: function () {
+      return this.threshold_ezurax$_0;
+    },
+    set: function (threshold) {
+      this.threshold_ezurax$_0 = threshold;
+    }
+  });
+  Object.defineProperty(GeoClusterStrategy.prototype, 'distance', {
+    get: function () {
+      return this.distance_h5k3wt$_0;
+    },
+    set: function (distance) {
+      this.distance_h5k3wt$_0 = distance;
+    }
+  });
+  Object.defineProperty(GeoClusterStrategy.prototype, 'clusterStyle', {
+    get: function () {
+      return this.clusterStyle_glbfth$_0;
+    },
+    set: function (clusterStyle) {
+      this.clusterStyle_glbfth$_0 = clusterStyle;
+    }
+  });
+  GeoClusterStrategy.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoClusterStrategy',
+    interfaces: [IGeoClusterStrategy, GeoBase]
+  };
+  function GeoClusterStyle() {
+    this.label_bopnra$_0 = '';
+    this.title_flsmg2$_0 = '';
+    this.summary_b8fjtg$_0 = '';
+    this.pointStyle_515nyx$_0 = new GeoClusterPointStyle();
+    this.iconStyle_3lvjcu$_0 = new GeoIconStyle();
+  }
+  Object.defineProperty(GeoClusterStyle.prototype, 'label', {
+    get: function () {
+      return this.label_bopnra$_0;
+    },
+    set: function (label) {
+      this.label_bopnra$_0 = label;
+    }
+  });
+  Object.defineProperty(GeoClusterStyle.prototype, 'title', {
+    get: function () {
+      return this.title_flsmg2$_0;
+    },
+    set: function (title) {
+      this.title_flsmg2$_0 = title;
+    }
+  });
+  Object.defineProperty(GeoClusterStyle.prototype, 'summary', {
+    get: function () {
+      return this.summary_b8fjtg$_0;
+    },
+    set: function (summary) {
+      this.summary_b8fjtg$_0 = summary;
+    }
+  });
+  Object.defineProperty(GeoClusterStyle.prototype, 'pointStyle', {
+    get: function () {
+      return this.pointStyle_515nyx$_0;
+    },
+    set: function (pointStyle) {
+      this.pointStyle_515nyx$_0 = pointStyle;
+    }
+  });
+  Object.defineProperty(GeoClusterStyle.prototype, 'iconStyle', {
+    get: function () {
+      return this.iconStyle_3lvjcu$_0;
+    },
+    set: function (iconStyle) {
+      this.iconStyle_3lvjcu$_0 = iconStyle;
+    }
+  });
+  GeoClusterStyle.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoClusterStyle',
+    interfaces: [IGeoClusterStyle]
   };
   function GeoColor() {
     this.red_3zhymj$_0 = 0;
@@ -427,20 +524,45 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     simpleName: 'GeoDocument',
     interfaces: [IGeoDocument, GeoBase]
   };
+  function GeoDocumentLink() {
+    GeoBase.call(this);
+    this.documentURI_r1w04r$_0 = '';
+    this.documentMIMEType_ooy1qn$_0 = '';
+  }
+  Object.defineProperty(GeoDocumentLink.prototype, 'documentURI', {
+    get: function () {
+      return this.documentURI_r1w04r$_0;
+    },
+    set: function (documentURI) {
+      this.documentURI_r1w04r$_0 = documentURI;
+    }
+  });
+  Object.defineProperty(GeoDocumentLink.prototype, 'documentMIMEType', {
+    get: function () {
+      return this.documentMIMEType_ooy1qn$_0;
+    },
+    set: function (documentMIMEType) {
+      this.documentMIMEType_ooy1qn$_0 = documentMIMEType;
+    }
+  });
+  GeoDocumentLink.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoDocumentLink',
+    interfaces: [IGeoDocumentLink, GeoBase]
+  };
+  function GeoESRIRest() {
+    GeoService.call(this);
+  }
+  GeoESRIRest.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoESRIRest',
+    interfaces: [IGeoESRIRest, GeoService]
+  };
   function GeoEllipse() {
     GeoRenderable.call(this);
-    this.timeStamp_9hme39$_0 = new Date();
     this.semiMajor_qumnkm$_0 = 150.0;
     this.semiMinor_qz3k9m$_0 = 75.0;
   }
-  Object.defineProperty(GeoEllipse.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_9hme39$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_9hme39$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoEllipse.prototype, 'semiMajor', {
     get: function () {
       return this.semiMajor_qumnkm$_0;
@@ -533,17 +655,8 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoImageOverlay() {
     GeoRenderable.call(this);
-    this.timeStamp_24mxye$_0 = new Date();
     this.imageURI_qc0tw9$_0 = '';
   }
-  Object.defineProperty(GeoImageOverlay.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_24mxye$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_24mxye$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoImageOverlay.prototype, 'imageURI', {
     get: function () {
       return this.imageURI_qc0tw9$_0;
@@ -556,6 +669,32 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     kind: Kind_CLASS,
     simpleName: 'GeoImageOverlay',
     interfaces: [IGeoImageOverlay, GeoRenderable]
+  };
+  function GeoInstance() {
+    GeoBase.call(this);
+    this.parentContainerId_xoq85m$_0 = 'false';
+    this.visibility_dx6axy$_0 = false;
+  }
+  Object.defineProperty(GeoInstance.prototype, 'parentContainerId', {
+    get: function () {
+      return this.parentContainerId_xoq85m$_0;
+    },
+    set: function (parentContainerId) {
+      this.parentContainerId_xoq85m$_0 = parentContainerId;
+    }
+  });
+  Object.defineProperty(GeoInstance.prototype, 'visibility', {
+    get: function () {
+      return this.visibility_dx6axy$_0;
+    },
+    set: function (visibility) {
+      this.visibility_dx6axy$_0 = visibility;
+    }
+  });
+  GeoInstance.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoInstance',
+    interfaces: [IGeoInstance, GeoBase]
   };
   function GeoLabelStyle() {
     this.size_w7nk0v$_0 = 12.0;
@@ -691,9 +830,60 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     simpleName: 'GeoLookAt',
     interfaces: [IGeoLookAt, GeoBase]
   };
+  function GeoMessage() {
+    this.channel_pou4y3$_0 = '';
+    this.senderId_wc9tyk$_0 = new MpUUID();
+    this.targetId_ibj8y8$_0 = new MpUUID();
+    this.messageId_ypnb6e$_0 = new MpUUID();
+    this.payload_qiyaie$_0 = new Any();
+  }
+  Object.defineProperty(GeoMessage.prototype, 'channel', {
+    get: function () {
+      return this.channel_pou4y3$_0;
+    },
+    set: function (channel) {
+      this.channel_pou4y3$_0 = channel;
+    }
+  });
+  Object.defineProperty(GeoMessage.prototype, 'senderId', {
+    get: function () {
+      return this.senderId_wc9tyk$_0;
+    },
+    set: function (senderId) {
+      this.senderId_wc9tyk$_0 = senderId;
+    }
+  });
+  Object.defineProperty(GeoMessage.prototype, 'targetId', {
+    get: function () {
+      return this.targetId_ibj8y8$_0;
+    },
+    set: function (targetId) {
+      this.targetId_ibj8y8$_0 = targetId;
+    }
+  });
+  Object.defineProperty(GeoMessage.prototype, 'messageId', {
+    get: function () {
+      return this.messageId_ypnb6e$_0;
+    },
+    set: function (messageId) {
+      this.messageId_ypnb6e$_0 = messageId;
+    }
+  });
+  Object.defineProperty(GeoMessage.prototype, 'payload', {
+    get: function () {
+      return this.payload_qiyaie$_0;
+    },
+    set: function (payload) {
+      this.payload_qiyaie$_0 = payload;
+    }
+  });
+  GeoMessage.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoMessage',
+    interfaces: [IGeoMessage]
+  };
   function GeoMilSymbol() {
     GeoRenderable.call(this);
-    this.timeStamp_3ab4ld$_0 = new Date();
     this.symbolStandard_2vpq48$_0 = IGeoMilSymbol$SymbolStandard$MIL_STD_2525C_getInstance();
     this.symbolCode_qbt5bc$_0 = '';
     this.modifiers_9z1naz$_0 = HashMap_init();
@@ -701,14 +891,6 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     this.symbolCode = 'SUGP-----------';
     this.modifiers = HashMap_init();
   }
-  Object.defineProperty(GeoMilSymbol.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_3ab4ld$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_3ab4ld$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoMilSymbol.prototype, 'symbolStandard', {
     get: function () {
       return this.symbolStandard_2vpq48$_0;
@@ -740,16 +922,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoPath() {
     GeoRenderable.call(this);
-    this.timeStamp_usnoae$_0 = new Date();
   }
-  Object.defineProperty(GeoPath.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_usnoae$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_usnoae$_0 = timeStamp;
-    }
-  });
   GeoPath.$metadata$ = {
     kind: Kind_CLASS,
     simpleName: 'GeoPath',
@@ -783,16 +956,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoPolygon() {
     GeoRenderable.call(this);
-    this.timeStamp_xwcj0v$_0 = new Date();
   }
-  Object.defineProperty(GeoPolygon.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_xwcj0v$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_xwcj0v$_0 = timeStamp;
-    }
-  });
   GeoPolygon.$metadata$ = {
     kind: Kind_CLASS,
     simpleName: 'GeoPolygon',
@@ -885,18 +1049,9 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoRectangle() {
     GeoRenderable.call(this);
-    this.timeStamp_w90cvu$_0 = new Date();
     this.width_jxlqc6$_0 = 150.0;
     this.height_cg0xvh$_0 = 75.0;
   }
-  Object.defineProperty(GeoRectangle.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_w90cvu$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_w90cvu$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoRectangle.prototype, 'width', {
     get: function () {
       return this.width_jxlqc6$_0;
@@ -920,9 +1075,9 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   };
   function GeoRenderable() {
     GeoContainer.call(this);
-    this.timeStamp_8y062d$_0 = new Date();
     this.altitudeMode_5q5vle$_0 = IGeoAltitudeMode$AltitudeMode$ABSOLUTE_getInstance();
     this.positions_s88rb$_0 = ArrayList_init();
+    this.timeStamp_8y062d$_0 = new Date();
     this.timeSpans_907bmj$_0 = ArrayList_init();
     this.labelStyle_rm0rbq$_0 = new GeoLabelStyle();
     this.strokeStyle_wyi0eg$_0 = new GeoStrokeStyle();
@@ -934,14 +1089,6 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     this.pathType_8wumk$_0 = IGeoRenderable$PathType$LINEAR_getInstance();
     this.pathType = IGeoRenderable$PathType$GREAT_CIRCLE_getInstance();
   }
-  Object.defineProperty(GeoRenderable.prototype, 'timeStamp', {
-    get: function () {
-      return this.timeStamp_8y062d$_0;
-    },
-    set: function (timeStamp) {
-      this.timeStamp_8y062d$_0 = timeStamp;
-    }
-  });
   Object.defineProperty(GeoRenderable.prototype, 'altitudeMode', {
     get: function () {
       return this.altitudeMode_5q5vle$_0;
@@ -956,6 +1103,14 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     },
     set: function (positions) {
       this.positions_s88rb$_0 = positions;
+    }
+  });
+  Object.defineProperty(GeoRenderable.prototype, 'timeStamp', {
+    get: function () {
+      return this.timeStamp_8y062d$_0;
+    },
+    set: function (timeStamp) {
+      this.timeStamp_8y062d$_0 = timeStamp;
     }
   });
   Object.defineProperty(GeoRenderable.prototype, 'timeSpans', {
@@ -1035,6 +1190,39 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     simpleName: 'GeoRenderable',
     interfaces: [IGeoRenderable, GeoContainer]
   };
+  function GeoScreenPosition() {
+    this.x_xioxgc$_0 = 0.0;
+    this.y_xioxfh$_0 = 0.0;
+  }
+  Object.defineProperty(GeoScreenPosition.prototype, 'x', {
+    get: function () {
+      return this.x_xioxgc$_0;
+    },
+    set: function (x) {
+      this.x_xioxgc$_0 = x;
+    }
+  });
+  Object.defineProperty(GeoScreenPosition.prototype, 'y', {
+    get: function () {
+      return this.y_xioxfh$_0;
+    },
+    set: function (y) {
+      this.y_xioxfh$_0 = y;
+    }
+  });
+  GeoScreenPosition.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoScreenPosition',
+    interfaces: [IGeoScreenPosition]
+  };
+  function GeoService() {
+    GeoBase.call(this);
+  }
+  GeoService.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoService',
+    interfaces: [IGeoService, GeoBase]
+  };
   function GeoSquare() {
     GeoRenderable.call(this);
     this.width_20vhke$_0 = 100.0;
@@ -1095,6 +1283,14 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     simpleName: 'GeoStrokeStyle',
     interfaces: [IGeoStrokeStyle]
   };
+  function GeoTMS() {
+    GeoService.call(this);
+  }
+  GeoTMS.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoTMS',
+    interfaces: [IGeoTMS, GeoService]
+  };
   function GeoText() {
     GeoRenderable.call(this);
   }
@@ -1132,7 +1328,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     this.camera_f00vr7$_0 = new GeoCamera();
     this.lookAt_bp6gk6$_0 = new GeoLookAt();
     this.bounds_72t4qb$_0 = new GeoBounds();
-    this.scale_nzsk9q$_0 = 0;
+    this.scale_nzsk9q$_0 = 0.0;
   }
   Object.defineProperty(GeoView.prototype, 'camera', {
     get: function () {
@@ -1170,6 +1366,38 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     kind: Kind_CLASS,
     simpleName: 'GeoView',
     interfaces: [IGeoView]
+  };
+  function GeoWCS() {
+    GeoService.call(this);
+  }
+  GeoWCS.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoWCS',
+    interfaces: [IGeoWCS, GeoService]
+  };
+  function GeoWFS() {
+    GeoService.call(this);
+  }
+  GeoWFS.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoWFS',
+    interfaces: [IGeoWFS, GeoService]
+  };
+  function GeoWMS() {
+    GeoService.call(this);
+  }
+  GeoWMS.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoWMS',
+    interfaces: [IGeoWFS, GeoService]
+  };
+  function GeoWMTS() {
+    GeoService.call(this);
+  }
+  GeoWMTS.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'GeoWMTS',
+    interfaces: [IGeoWMTS, GeoService]
   };
   function IGeoAirControlMeasure() {
   }
@@ -1444,7 +1672,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   IGeoCamera.$metadata$ = {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoCamera',
-    interfaces: [IGeoPosition, IGeoAltitudeMode]
+    interfaces: [IGeoBase, IGeoPosition, IGeoAltitudeMode]
   };
   function IGeoCircle() {
   }
@@ -1452,6 +1680,27 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoCircle',
     interfaces: [IGeoRenderable]
+  };
+  function IGeoClusterPointStyle() {
+  }
+  IGeoClusterPointStyle.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoClusterPointStyle',
+    interfaces: []
+  };
+  function IGeoClusterStrategy() {
+  }
+  IGeoClusterStrategy.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoClusterStrategy',
+    interfaces: []
+  };
+  function IGeoClusterStyle() {
+  }
+  IGeoClusterStyle.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoClusterStyle',
+    interfaces: []
   };
   function IGeoColor() {
   }
@@ -1465,14 +1714,28 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   IGeoContainer.$metadata$ = {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoContainer',
-    interfaces: []
+    interfaces: [IGeoBase]
   };
   function IGeoDocument() {
   }
   IGeoDocument.$metadata$ = {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoDocument',
+    interfaces: [IGeoBase]
+  };
+  function IGeoDocumentLink() {
+  }
+  IGeoDocumentLink.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoDocumentLink',
     interfaces: []
+  };
+  function IGeoESRIRest() {
+  }
+  IGeoESRIRest.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoESRIRest',
+    interfaces: [IGeoService]
   };
   function IGeoEllipse() {
   }
@@ -1549,6 +1812,13 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoImageOverlay',
     interfaces: [IGeoRenderable]
+  };
+  function IGeoInstance() {
+  }
+  IGeoInstance.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoInstance',
+    interfaces: [IGeoBase]
   };
   function IGeoLabelStyle() {
   }
@@ -1666,7 +1936,14 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   IGeoLookAt.$metadata$ = {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoLookAt',
-    interfaces: [IGeoPosition, IGeoAltitudeMode]
+    interfaces: [IGeoBase, IGeoPosition, IGeoAltitudeMode]
+  };
+  function IGeoMessage() {
+  }
+  IGeoMessage.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoMessage',
+    interfaces: []
   };
   function IGeoMilSymbol() {
   }
@@ -2207,6 +2484,20 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     simpleName: 'IGeoRenderable',
     interfaces: [IGeoPositionGroup, IGeoContainer]
   };
+  function IGeoScreenPosition() {
+  }
+  IGeoScreenPosition.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoScreenPosition',
+    interfaces: []
+  };
+  function IGeoService() {
+  }
+  IGeoService.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoService',
+    interfaces: [IGeoBase]
+  };
   function IGeoSquare() {
   }
   IGeoSquare.$metadata$ = {
@@ -2220,6 +2511,13 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     kind: Kind_INTERFACE,
     simpleName: 'IGeoStrokeStyle',
     interfaces: []
+  };
+  function IGeoTMS() {
+  }
+  IGeoTMS.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoTMS',
+    interfaces: [IGeoService]
   };
   function IGeoText() {
   }
@@ -2242,6 +2540,34 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
     simpleName: 'IGeoView',
     interfaces: []
   };
+  function IGeoWCS() {
+  }
+  IGeoWCS.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoWCS',
+    interfaces: [IGeoService]
+  };
+  function IGeoWFS() {
+  }
+  IGeoWFS.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoWFS',
+    interfaces: [IGeoService]
+  };
+  function IGeoWMS() {
+  }
+  IGeoWMS.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoWMS',
+    interfaces: [IGeoService]
+  };
+  function IGeoWMTS() {
+  }
+  IGeoWMTS.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'IGeoWMTS',
+    interfaces: [IGeoService]
+  };
   var package$multiplatform = _.multiplatform || (_.multiplatform = {});
   var package$expected = package$multiplatform.expected || (package$multiplatform.expected = {});
   package$expected.MpUUID = MpUUID;
@@ -2254,15 +2580,22 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   package$primitives.GeoBounds = GeoBounds;
   package$primitives.GeoCamera = GeoCamera;
   package$primitives.GeoCircle = GeoCircle;
+  package$primitives.GeoClusterPointStyle = GeoClusterPointStyle;
+  package$primitives.GeoClusterStrategy = GeoClusterStrategy;
+  package$primitives.GeoClusterStyle = GeoClusterStyle;
   package$primitives.GeoColor = GeoColor;
   package$primitives.GeoContainer = GeoContainer;
   package$primitives.GeoDocument = GeoDocument;
+  package$primitives.GeoDocumentLink = GeoDocumentLink;
+  package$primitives.GeoESRIRest = GeoESRIRest;
   package$primitives.GeoEllipse = GeoEllipse;
   package$primitives.GeoFillStyle = GeoFillStyle;
   package$primitives.GeoIconStyle = GeoIconStyle;
   package$primitives.GeoImageOverlay = GeoImageOverlay;
+  package$primitives.GeoInstance = GeoInstance;
   package$primitives.GeoLabelStyle = GeoLabelStyle;
   package$primitives.GeoLookAt = GeoLookAt;
+  package$primitives.GeoMessage = GeoMessage;
   package$primitives.GeoMilSymbol = GeoMilSymbol;
   package$primitives.GeoPath = GeoPath;
   package$primitives.GeoPoint = GeoPoint;
@@ -2272,11 +2605,18 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   package$primitives.GeoPositionHistory = GeoPositionHistory;
   package$primitives.GeoRectangle = GeoRectangle;
   package$primitives.GeoRenderable = GeoRenderable;
+  package$primitives.GeoScreenPosition = GeoScreenPosition;
+  package$primitives.GeoService = GeoService;
   package$primitives.GeoSquare = GeoSquare;
   package$primitives.GeoStrokeStyle = GeoStrokeStyle;
+  package$primitives.GeoTMS = GeoTMS;
   package$primitives.GeoText = GeoText;
   package$primitives.GeoTimeSpan = GeoTimeSpan;
   package$primitives.GeoView = GeoView;
+  package$primitives.GeoWCS = GeoWCS;
+  package$primitives.GeoWFS = GeoWFS;
+  package$primitives.GeoWMS = GeoWMS;
+  package$primitives.GeoWMTS = GeoWMTS;
   Object.defineProperty(IGeoAirControlMeasure$Attribute, 'RADIUS', {
     get: IGeoAirControlMeasure$Attribute$RADIUS_getInstance
   });
@@ -2350,9 +2690,14 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   package$interfaces.IGeoBounds = IGeoBounds;
   package$interfaces.IGeoCamera = IGeoCamera;
   package$interfaces.IGeoCircle = IGeoCircle;
+  package$interfaces.IGeoClusterPointStyle = IGeoClusterPointStyle;
+  package$interfaces.IGeoClusterStrategy = IGeoClusterStrategy;
+  package$interfaces.IGeoClusterStyle = IGeoClusterStyle;
   package$interfaces.IGeoColor = IGeoColor;
   package$interfaces.IGeoContainer = IGeoContainer;
   package$interfaces.IGeoDocument = IGeoDocument;
+  package$interfaces.IGeoDocumentLink = IGeoDocumentLink;
+  package$interfaces.IGeoESRIRest = IGeoESRIRest;
   package$interfaces.IGeoEllipse = IGeoEllipse;
   Object.defineProperty(IGeoFillStyle$FillPattern, 'solid', {
     get: IGeoFillStyle$FillPattern$solid_getInstance
@@ -2367,6 +2712,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   package$interfaces.IGeoFillStyle = IGeoFillStyle;
   package$interfaces.IGeoIconStyle = IGeoIconStyle;
   package$interfaces.IGeoImageOverlay = IGeoImageOverlay;
+  package$interfaces.IGeoInstance = IGeoInstance;
   Object.defineProperty(IGeoLabelStyle$Typeface, 'REGULAR', {
     get: IGeoLabelStyle$Typeface$REGULAR_getInstance
   });
@@ -2392,6 +2738,7 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   IGeoLabelStyle.Justification = IGeoLabelStyle$Justification;
   package$interfaces.IGeoLabelStyle = IGeoLabelStyle;
   package$interfaces.IGeoLookAt = IGeoLookAt;
+  package$interfaces.IGeoMessage = IGeoMessage;
   Object.defineProperty(IGeoMilSymbol$Modifier, 'SYMBOL_ICON', {
     get: IGeoMilSymbol$Modifier$SYMBOL_ICON_getInstance
   });
@@ -2554,11 +2901,18 @@ this['cmapi-multi-js'] = function (_, Kotlin) {
   });
   IGeoRenderable.PathType = IGeoRenderable$PathType;
   package$interfaces.IGeoRenderable = IGeoRenderable;
+  package$interfaces.IGeoScreenPosition = IGeoScreenPosition;
+  package$interfaces.IGeoService = IGeoService;
   package$interfaces.IGeoSquare = IGeoSquare;
   package$interfaces.IGeoStrokeStyle = IGeoStrokeStyle;
+  package$interfaces.IGeoTMS = IGeoTMS;
   package$interfaces.IGeoText = IGeoText;
   package$interfaces.IGeoTimeSpan = IGeoTimeSpan;
   package$interfaces.IGeoView = IGeoView;
+  package$interfaces.IGeoWCS = IGeoWCS;
+  package$interfaces.IGeoWFS = IGeoWFS;
+  package$interfaces.IGeoWMS = IGeoWMS;
+  package$interfaces.IGeoWMTS = IGeoWMTS;
   Kotlin.defineModule('cmapi-multi-js', _);
   return _;
 }(typeof this['cmapi-multi-js'] === 'undefined' ? {} : this['cmapi-multi-js'], kotlin);

@@ -1,7 +1,386 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="168c2a9d-d05b-412f-8cf2-916959fce27b" name="Default" comment="" />
+    <list default="true" id="168c2a9d-d05b-412f-8cf2-916959fce27b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/META-INF/main.kotlin_module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/multiplatform/expected/MpDate.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/multiplatform/expected/MpUUID.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoAirControlMeasure.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoAltitudeMode.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoBase.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoBounds.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoCamera.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoCircle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoColor.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoContainer.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoDocument.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoEllipse.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoFillStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoIconStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoImageOverlay.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoLabelStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoLookAt.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoMilSymbol.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoPath.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoPoint.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoPolygon.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoPosition.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoPositionGroup.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoPositionHistory.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoRectangle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoRenderable.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoSquare.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoStrokeStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoText.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoTimeSpan.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/GeoView.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoAltitudeMode.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoBase.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoBounds.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoCamera.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoCircle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoColor.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoContainer.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoDocument.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoEllipse.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoFillStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoIconStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoImageOverlay.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoLookAt.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoPath.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoPoint.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoPolygon.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoPosition.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoPositionGroup.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoPositionHistory.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoRectangle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoRenderable.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoSquare.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoStrokeStyle.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoText.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoTimeSpan.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/org/cmapi/primitives/interfaces/IGeoView.kotlin_metadata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/artifact-difference.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-build/version.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/cmapi-multi.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/classes/main/cmapi-multi-js.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/classes/main/cmapi-multi-js.meta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/classes/main/cmapi-multi-js/multiplatform/expected/expected.kjsm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/classes/main/cmapi-multi-js/org/cmapi/primitives/interfaces/interfaces.kjsm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/classes/main/cmapi-multi-js/org/cmapi/primitives/primitives.kjsm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/libs/cmapi-multi-js.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-js/build/tmp/jar/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/META-INF/cmapi-multi-jvm.kotlin_module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/multiplatform/expected/MpDateKt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/multiplatform/expected/MpUUID.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoAirControlMeasure.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoAltitudeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoBounds.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoCamera.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoCircle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoColor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoContainer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoEllipse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoFillStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoIconStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoImageOverlay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoLabelStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoLookAt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoMilSymbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoPath.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoPolygon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoPositionGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoPositionHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoRectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoRenderable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoSquare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoStrokeStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoText.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoTimeSpan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/GeoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure$AcmType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure$Attribute.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAltitudeMode$AltitudeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAltitudeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoBounds.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoCamera.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoCircle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoColor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoContainer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoEllipse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoFillStyle$FillPattern.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoFillStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoIconStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoImageOverlay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle$Justification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle$Typeface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoLookAt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol$Modifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol$SymbolStandard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoPath.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoPolygon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoPositionGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoPositionHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoRectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoRenderable$PathType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoRenderable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoSquare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoStrokeStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoText.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoTimeSpan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/META-INF/cmapi-multi-jvm.kotlin_module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/multiplatform/expected/MpDateKt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/multiplatform/expected/MpUUID.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoAirControlMeasure.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoAltitudeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoBounds.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoCamera.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoCircle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoColor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoContainer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoEllipse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoFillStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoIconStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoImageOverlay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoLabelStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoLookAt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoMilSymbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoPath.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoPolygon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoPositionGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoPositionHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoRectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoRenderable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoSquare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoStrokeStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoText.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoTimeSpan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/GeoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure$AcmType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure$Attribute.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoAltitudeMode$AltitudeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoAltitudeMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoBounds.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoCamera.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoCircle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoColor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoContainer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoDocument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoEllipse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoFillStyle$FillPattern.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoFillStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoIconStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoImageOverlay.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle$Justification.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle$Typeface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoLabelStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoLookAt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol$Modifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol$SymbolStandard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoMilSymbol.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoPath.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoPolygon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoPositionGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoPositionHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoRectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoRenderable$PathType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoRenderable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoSquare.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoStrokeStyle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoText.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoTimeSpan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin-classes/main/org/cmapi/primitives/interfaces/IGeoView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/build-history.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-snapshot.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.s" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/data-container-format-version.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/format-version.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/gradle-format-version.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/last-build.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileKotlin/sync/kotlin-files-in-java-timestamps.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/kotlin/compileTestKotlin/sync/kotlin-files-in-java-timestamps.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/libs/cmapi-multi-jvm.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/build/tmp/jar/MANIFEST.MF" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAirControlMeasure.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoAirControlMeasure.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAltitudeMode.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoAltitudeMode.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoBase.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoBase.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoBounds.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoBounds.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoCamera.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoCamera.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoCircle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoCircle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoColor.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoColor.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoContainer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoContainer.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoDocument.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoDocument.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoEllipse.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoEllipse.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoFillStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoFillStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoIconStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoIconStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoImageOverlay.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoImageOverlay.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoLabelStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoLabelStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoLookAt.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoLookAt.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoMilSymbol.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoMilSymbol.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPath.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPath.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPoint.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPoint.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPolygon.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPolygon.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPosition.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPosition.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPositionGroup.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPositionGroup.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPositionHistory.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPositionHistory.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoRectangle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRectangle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoRenderable.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRenderable.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoSquare.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoSquare.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoStrokeStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoStrokeStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoText.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoText.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoTimeSpan.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoTimeSpan.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoView.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoAirControlMeasure.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoAirControlMeasure.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoAltitudeMode.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoAltitudeMode.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoBase.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoBase.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoBounds.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoBounds.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoCamera.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoCamera.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoCircle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoCircle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoColor.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoColor.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoContainer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoContainer.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoDocument.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoDocument.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoEllipse.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoEllipse.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoFillStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoFillStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoIconStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoIconStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoImageOverlay.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoImageOverlay.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoLabelStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoLabelStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoLookAt.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoLookAt.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoMilSymbol.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoMilSymbol.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPath.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPath.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPoint.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPoint.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPolygon.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPolygon.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPosition.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPosition.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPositionGroup.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPositionGroup.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPositionHistory.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPositionHistory.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoRectangle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoRectangle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoRenderable.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoRenderable.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoSquare.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoSquare.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoStrokeStyle.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoStrokeStyle.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoText.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoText.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoTimeSpan.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoTimeSpan.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoView.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5-rc-2/taskHistory/taskHistory.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/multiplatform/expected/MpUUID.kt" afterPath="$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/multiplatform/expected/MpUUID.kt" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,81 +404,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="GeoAltitudeMode.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAltitudeMode.kt">
+      <file leaf-file-name="GeoRenderable.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRenderable.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MpUUID.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmapi-multi-js/src/main/kotlin/multiplatform/expected/MpUUID.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="396">
+              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <folding>
+                <element signature="e#30#107#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GeoBase.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoBase.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoBase.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="162">
+              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeoContainer.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoContainer.kt">
+      <file leaf-file-name="GeoSquare.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoSquare.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="90">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GeoAirControlMeasure.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAirControlMeasure.kt">
+      <file leaf-file-name="GeoStrokeStyle.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoStrokeStyle.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoText.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoText.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IGeoContainer.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoContainer.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
               <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IGeoPositionGroup.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPositionGroup.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeoPosition.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPosition.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeoPositionGroup.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPositionGroup.kt">
+      <file leaf-file-name="GeoTimeSpan.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoTimeSpan.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="40" />
+              <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoView.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IGeoBase.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoBase.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoService.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoService.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -111,6 +512,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -120,7 +523,26 @@
       <find>open</find>
       <find>geopositio</find>
       <find>geopositiongroup</find>
+      <find>Igeobase</find>
+      <find>interface Igeoloo</find>
+      <find>Igeodoc</find>
+      <find>Igeolookat</find>
+      <find>IGeoconta</find>
+      <find>IGeoCamera</find>
+      <find>class Geo</find>
+      <find>class</find>
+      <find>timespans</find>
+      <find>geotyp</find>
+      <find>properties</find>
+      <find>positions</find>
+      <find>geotype</find>
     </findStrings>
+    <replaceStrings>
+      <replace>open class Geo</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -858,48 +1280,67 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cmapi-multi-jvm/src/test/java/org/cmapi/primatives/interfaces/Date.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-js/src/test/kotlin/org/cmapi/primatives/interfaces/Date.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-jvm/src/test/java/org/cmapi/primatives/Date.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-js/src/test/kotlin/org/cmapi/primatives/Date.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/Date.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-js/src/main/kotlin/org/cmapi/primatives/MpDate.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/org/cmapi/primatives/MpDate.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoBaseShared.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoContainer.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoDocument.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoEllipse.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoFillStyle.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPositionGroup.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoTimeSpan.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPositionGroup.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/multiplatform/expected/MpDate.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/multiplatform/expected/MpDate.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPolygon.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoRectangle.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoRenderable.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPath.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoMilSymbol.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoTimeSpan.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/multiplatform/expected/MpUUID.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/multiplatform/expected/MpUUID.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoBase.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoCircle.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoEllipse.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoImageOverlay.kt" />
-        <option value="$PROJECT_DIR$/cmapi-multi-js/src/main/kotlin/multiplatform/expected/MpUUID.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoContainer.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoBase.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPosition.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAltitudeMode.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAirControlMeasure.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeClusterPointStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeClusterPointStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoService.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoText.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoTimeSpan.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoTMS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoMessage.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoScreenPosition.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoWCS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoWMS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoWMTS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoWFS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoTMS.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoInstance.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoESRIRest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoDocumentLink.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoClusterStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoClusterPointStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoCircle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoAirControlMeasure.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoColor.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoClusterStrategy.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoContainer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoDocument.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoEllipse.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoFillStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoFillStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoIconStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoImageOverlay.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoImageOverlay.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoLabelStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoLookAt.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoMilSymbol.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPath.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPath.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPoint.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPolygon.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPolygon.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPosition.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPositionGroup.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPositionGroup.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPositionHistory.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRectangle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRenderable.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoSquare.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoStrokeStyle.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoBase.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoBase.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoContainer.kt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="y" value="-2" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="27" />
     <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -916,8 +1357,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -929,41 +1368,6 @@
             <path>
               <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
               <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cmapi-multi-js" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cmapi-multi-js" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cmapi-multi-js" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cmapi-multi-js" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="cmapi-multi-js" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="expected" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -985,17 +1389,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="primatives" type="462c0819:PsiDirectoryNode" />
+              <item name="primitives" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cmapi-multi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cmapi-multi" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="primitives" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cmapi2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../EMP/emp3-android/3rdpartylibrary/cmapi/org" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -1123,7 +1538,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1134,12 +1549,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2919955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29558325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3653846" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1152,6 +1566,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1186,104 +1601,61 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPositionHistory.kt">
+    <entry file="file://$USER_HOME$/.cache/.fr-WjKLNy/org/cmapi/primitives/interfaces/IGeoContainer.class" />
+    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoContainer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoRectangle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoRenderable.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoAltitudeMode.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoSquare.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoStrokeStyle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoText.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoTimeSpan.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/multiplatform/expected/MpDate.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/multiplatform/expected/MpDate.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/src/main/kotlin/multiplatform/expected/MpUUID.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/multiplatform/expected/MpUUID.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoBase.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPosition.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="36">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/multiplatform/expected/MpDateKt.class">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoRenderable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoCamera.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="63" lean-forward="false" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoLookAt.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../EMP/emp3-android/3rdpartylibrary/cmapi/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1291,297 +1663,349 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/multiplatform/expected/MpUUID.class">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoAirControlMeasure.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="47" />
+          <folding>
+            <element signature="e#30#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoAltitudeMode.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAirControlMeasure.class">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoBounds.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoCamera.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoCircle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoClusterPointStyle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoClusterStrategy.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-jvm/build/classes/main/org/cmapi/primitives/interfaces/IGeoAltitudeMode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPoint.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoAirControlMeasure.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoBounds.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoClusterStyle.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoCamera.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoCircle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="45" lean-forward="false" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoColor.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoDocument.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoEllipse.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoColor.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoFillStyle.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoContainer.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state relative-caret-position="126">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoIconStyle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoImageOverlay.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoDocument.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoLabelStyle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoLookAt.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoMilSymbol.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPath.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPoint.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPolygon.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPositionHistory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoRectangle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoRenderable.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoSquare.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoStrokeStyle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoText.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoTimeSpan.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-js/src/main/kotlin/multiplatform/expected/MpUUID.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmapi-multi-js/build/classes/main/cmapi-multi-js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoContainer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoBase.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoDocumentLink.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="4" />
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/interfaces/IGeoPositionGroup.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoESRIRest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoFillStyle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoEllipse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoFillStyle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoIconStyle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoImageOverlay.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="62" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoImageOverlay.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPosition.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoLabelStyle.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoPositionGroup.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoLookAt.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoMessage.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="40" />
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAltitudeMode.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPath.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primatives/GeoAirControlMeasure.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoMilSymbol.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPath.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPoint.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPolygon.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPolygon.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPosition.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoPositionGroup.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPositionGroup.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoPositionHistory.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRectangle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoService.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoRenderable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="e#30#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoSquare.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoStrokeStyle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoText.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoTimeSpan.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoBase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/GeoBase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/org/cmapi/primitives/interfaces/IGeoContainer.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
@@ -1639,7 +2063,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cmapi-multi</last-edited>
+          <last-edited>cmapi-multi_main|cmapi-multi</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
