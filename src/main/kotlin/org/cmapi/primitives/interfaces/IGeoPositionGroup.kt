@@ -4,9 +4,9 @@ import multiplatform.expected.MpDate
 
 interface IGeoPositionGroup : IGeoAltitudeMode
 {
-    var positions: List<IGeoPosition>
+    var positions: MutableList<IGeoPosition>
 
     var timeStamp: MpDate
 
-    var timeSpans: List<IGeoTimeSpan>
+    var timeSpans: MutableList<IGeoTimeSpan>
 }

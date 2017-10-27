@@ -1,5 +1,7 @@
 package org.cmapi.primitives.interfaces
 
+import multiplatform.expected.MpDate
+
 interface IGeoRenderable : IGeoContainer, IGeoPositionGroup {
 
     var labelStyle: IGeoLabelStyle
