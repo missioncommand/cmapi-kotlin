@@ -2,7 +2,7 @@ package org.cmapi.primitives
 
 interface IGeoAltitudeMode {
 
-    var altitudeMode: AltitudeMode
+    var altitudeMode: AltitudeMode?
 
     enum class AltitudeMode {
         CLAMP_TO_GROUND,

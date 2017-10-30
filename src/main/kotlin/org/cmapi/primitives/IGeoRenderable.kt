@@ -2,11 +2,11 @@ package org.cmapi.primitives
 
 interface IGeoRenderable : IGeoContainer, IGeoPositionGroup {
 
-    var labelStyle: IGeoLabelStyle
+    var labelStyle: IGeoLabelStyle?
 
-    var strokeStyle: IGeoStrokeStyle
+    var strokeStyle: IGeoStrokeStyle?
 
-    var fillStyle: IGeoFillStyle
+    var fillStyle: IGeoFillStyle?
 
     var extrude: Boolean
 
