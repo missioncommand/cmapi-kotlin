@@ -1,5 +1,18 @@
 apply plugin: 'kotlin-platform-jvm'
 
+jar {
+
+    version = "$release_version"
+
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+
+
+    }
+}
+
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     expectedBy project(":")
@@ -8,12 +21,3 @@ dependencies {
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
 }
 
-jar {
-    from {
-        configurations.compile.collect {
-            it.isDirectory() ? it : zipTree(it)
-        }
-
-        version = "$release_version"
-    }
-}
