@@ -1,7 +1,6 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoAirControlMeasure
-import org.cmapi.primitives.interfaces.IGeoAirControlMeasure.Attribute;
+import org.cmapi.primitives.IGeoAirControlMeasure.Attribute;
 
 open class GeoAirControlMeasure : GeoRenderable(), IGeoAirControlMeasure
 {

@@ -1,8 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoColor
-import org.cmapi.primitives.interfaces.IGeoFillStyle
-
 open class GeoFillStyle : IGeoFillStyle
 {
     override var description : String = ""

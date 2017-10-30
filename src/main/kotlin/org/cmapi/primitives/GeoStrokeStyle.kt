@@ -1,8 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoColor
-import org.cmapi.primitives.interfaces.IGeoStrokeStyle
-
 open class GeoStrokeStyle : IGeoStrokeStyle
 {
     override var strokeColor: IGeoColor = GeoColor()

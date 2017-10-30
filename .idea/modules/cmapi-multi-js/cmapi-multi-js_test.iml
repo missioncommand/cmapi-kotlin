@@ -8,7 +8,7 @@
           <option name="additionalArguments" value="-Xmulti-platform" />
         </compilerSettings>
         <compilerArguments>
-          <option name="outputFile" value="$MODULE_DIR$/../../../cmapi-multi-js/build/classes/test/cmapi-multi-js_test.js" />
+          <option name="outputFile" value="$MODULE_DIR$/../../../cmapi-multi-js/build/classes/kotlin/test/cmapi-multi-js_test.js" />
           <option name="noStdlib" value="true" />
           <option name="sourceMapEmbedSources" value="inlining" />
           <option name="metaInfo" value="true" />

@@ -1,7 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoPosition
-
 open class GeoPosition : IGeoPosition
 {
     override var latitude = 0.0

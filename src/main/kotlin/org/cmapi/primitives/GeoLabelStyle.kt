@@ -1,8 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoColor
-import org.cmapi.primitives.interfaces.IGeoLabelStyle
-
 open class GeoLabelStyle : IGeoLabelStyle
 {
     override var size = 12.0

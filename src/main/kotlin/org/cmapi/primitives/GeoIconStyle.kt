@@ -1,7 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoIconStyle
-
 open class GeoIconStyle : IGeoIconStyle
 {
     override var size = 32.0

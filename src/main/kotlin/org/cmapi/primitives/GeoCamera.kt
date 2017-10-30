@@ -1,8 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoAltitudeMode
-import org.cmapi.primitives.interfaces.IGeoCamera
-
 open class GeoCamera : GeoBase(), IGeoCamera
 {
     override var altitudeMode: IGeoAltitudeMode.AltitudeMode = IGeoAltitudeMode.AltitudeMode.ABSOLUTE

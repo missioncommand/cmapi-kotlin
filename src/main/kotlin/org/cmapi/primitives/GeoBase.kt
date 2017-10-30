@@ -2,7 +2,6 @@ package org.cmapi.primitives
 
 import multiplatform.expected.GetUUIDFunction
 import multiplatform.expected.MpUUID
-import org.cmapi.primitives.interfaces.IGeoBase
 
 open class GeoBase : IGeoBase
 {

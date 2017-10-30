@@ -8,7 +8,7 @@
           <option name="additionalArguments" value="-Xmulti-platform" />
         </compilerSettings>
         <compilerArguments>
-          <option name="destination" value="$MODULE_DIR$/../../../cmapi-multi-jvm/build/kotlin-classes/main" />
+          <option name="destination" value="$MODULE_DIR$/../../../cmapi-multi-jvm/build/classes/kotlin/main" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="cmapi-multi-jvm" />

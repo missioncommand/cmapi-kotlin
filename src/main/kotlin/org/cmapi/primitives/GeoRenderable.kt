@@ -1,7 +1,6 @@
 package org.cmapi.primitives
 
 import multiplatform.expected.MpDate
-import org.cmapi.primitives.interfaces.*
 
 
 open class GeoRenderable : GeoContainer(), IGeoRenderable

@@ -1,7 +1,5 @@
 package org.cmapi.primitives
 
-import org.cmapi.primitives.interfaces.IGeoColor
-
 open class GeoColor : IGeoColor
 {
     override var red = 0
