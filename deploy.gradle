@@ -39,6 +39,8 @@ allprojects{
     apply plugin: 'idea'
     apply plugin: 'com.jfrog.bintray'
 
+    version = release_version
+
     bintray {
         user = properties.getProperty("bintray.user")
         key = properties.getProperty("bintray.apikey")
@@ -90,8 +92,8 @@ subprojects {
 }
 
 
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    //TODO include jvm jar and js
-}
+//
+//dependencies {
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    //TODO include jvm jar and js
+//}
