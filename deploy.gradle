@@ -15,7 +15,7 @@ install {
             artifactId artifact.id
             version artifact.version
             name artifact.id // pom.project.name must be same as bintray.pkg.name
-            url artifact.siteUrl
+
             licenses {
                 license { // HARDCODED
                     name 'Apache-2.0'
@@ -60,33 +60,4 @@ allprojects{
         }
     }
 
-}
-
-
-subprojects {
-    apply plugin: 'maven'
-
-    if (project.plugins.hasPlugin('java')) {
-        configurations {
-            published
-        }
-        dependencies {
-            testCompile 'junit:junit:4.7'
-        }
-
-        task sourceJar(type: Jar) {
-            from sourceSets.main.allSource
-            classifier = 'sources'
-        }
-        task javadocJar(type: Jar, dependsOn: javadoc) {
-            classifier = 'javadoc'
-            from javadoc.destinationDir
-        }
-
-        // Add the sourceJars to non-extractor modules
-        artifacts {
-            published sourceJar
-            published javadocJar
-        }
-    }
 }
