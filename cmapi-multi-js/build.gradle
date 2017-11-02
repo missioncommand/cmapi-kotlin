@@ -1,5 +1,3 @@
-import org.w3c.dom.Text
-
 apply plugin: 'kotlin-platform-js'
 
 dependencies {
