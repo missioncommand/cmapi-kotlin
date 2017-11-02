@@ -19,7 +19,5 @@ dependencies {
 }
 
 bintrayUpload{
-
-    println "Got to multi-jvm bintray upload"
 }
 

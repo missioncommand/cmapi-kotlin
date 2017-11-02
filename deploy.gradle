@@ -48,11 +48,11 @@ allprojects{
         configurations = ['archives']
         pkg {
             repo = "cmapi-kotlin"
-            name ="cmapi-kotlin-release"
+            name = artifact.id
             websiteUrl = artifact.siteUrl
             userOrg="rgi"
             vcsUrl = artifact.gitUrl
-            licenses = artifact.licenses
+            licenses = ['Apache-2.0']
             publish = true
             version {
                 name = artifact.version

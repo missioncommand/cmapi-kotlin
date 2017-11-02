@@ -1,3 +1,5 @@
+import org.w3c.dom.Text
+
 apply plugin: 'kotlin-platform-js'
 
 dependencies {
@@ -6,5 +8,4 @@ dependencies {
 }
 
 bintrayUpload{
-    println "Got to multi-js bintray upload"
 }
