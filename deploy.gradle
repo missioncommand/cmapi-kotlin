@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 def artifact = new Properties()
 artifact.load(new FileInputStream("deploy.settings"))
 
-version=artifact.version
+version=release_version
 group=artifact.groupId
 
 install {
@@ -19,14 +19,12 @@ install {
             licenses {
                 license { // HARDCODED
                     name 'Apache-2.0'
-                    url 'https://www.gnu.org/licenses/gpl.txt'
                     distribution 'repo'
                 }
             }
             scm {
                 connection artifact.gitUrl
                 developerConnection artifact.gitUrl
-//                url artifact.siteUrl
             }
         }
     }
@@ -36,51 +34,64 @@ Properties properties = new Properties()
 File propFile = "${System.getProperty("user.dir")}${File.separator}.gradle${File.separator}bintray.properties" as File
 properties.load(propFile.newDataInputStream())
 
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
+allprojects{
 
-    configurations = ['archives']
-    pkg {
-        repo = "cmapi-kotlin"
-//        name = artifact.id
-        name ="cmapi-kotlin-release"
-        websiteUrl = artifact.siteUrl
-        userOrg="rgi"
-        vcsUrl = artifact.gitUrl
-        licenses = artifact.licenses
-        publish = true
-        version {
-            name = artifact.version
+    apply plugin: 'idea'
+    apply plugin: 'com.jfrog.bintray'
+
+    bintray {
+        user = properties.getProperty("bintray.user")
+        key = properties.getProperty("bintray.apikey")
+
+        configurations = ['archives']
+        pkg {
+            repo = "cmapi-kotlin"
+            name ="cmapi-kotlin-release"
+            websiteUrl = artifact.siteUrl
+            userOrg="rgi"
+            vcsUrl = artifact.gitUrl
+            licenses = artifact.licenses
+            publish = true
+            version {
+                name = artifact.version
+            }
+        }
+    }
+
+}
+
+
+subprojects {
+    apply plugin: 'maven'
+
+    if (project.plugins.hasPlugin('java')) {
+        configurations {
+            published
+        }
+        dependencies {
+            testCompile 'junit:junit:4.7'
+        }
+
+        task sourceJar(type: Jar) {
+            from sourceSets.main.allSource
+            classifier = 'sources'
+        }
+        task javadocJar(type: Jar, dependsOn: javadoc) {
+            classifier = 'javadoc'
+            from javadoc.destinationDir
+        }
+
+        // Add the sourceJars to non-extractor modules
+        artifacts {
+            published sourceJar
+            published javadocJar
         }
     }
 }
 
-//task sourcesJar(type: Jar) {
-//    from android.sourceSets.main.java.srcDirs
-//    classifier = 'sources'
-//}
 
-//task javadoc(type: Javadoc) {
-//    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-//}
-
-//task javadocJar(type: Jar, dependsOn: javadoc) {
-//    classifier = 'javadoc'
-//    from javadoc.destinationDir
-//    // options.encoding = 'UTF-8'
-//}
-
-artifacts {
-//    archives javadocJar
-//    archives sourcesJar
-}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     //TODO include jvm jar and js
-    //compile fileTree(dir: 'cmapi-multi-jvm', includes: ['*.jar'])
-
-//    compile 'com.android.support:appcompat-v7:21.0.2'
 }
