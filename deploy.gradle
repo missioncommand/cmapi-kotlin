@@ -90,10 +90,3 @@ subprojects {
         }
     }
 }
-
-
-//
-//dependencies {
-//    compile fileTree(dir: 'libs', include: ['*.jar'])
-//    //TODO include jvm jar and js
-//}
