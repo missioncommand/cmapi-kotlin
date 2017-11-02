@@ -3,3 +3,4 @@ cmapi-multi-js/build/
 cmapi-multi-jvm/build/
 
 .gradle/
+.idea/
