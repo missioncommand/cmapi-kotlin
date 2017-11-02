@@ -3,15 +3,23 @@ buildscript {
         kotlin_version = '1.2.0-beta-88'
         // Release version of the artifact
         release_version = '1.0.0.0'
+        jfrog_version = '1.7.3'
     }
     repositories {
         maven {
             url kotlinBintray
         }
         mavenCentral()
+        jcenter()
     }
     dependencies {
+
+        //Kotlin Dependency
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        //Bintray Dependency
+        classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$jfrog_version"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
     }
 }
 
@@ -24,6 +32,7 @@ allprojects {
             url kotlinBintray
         }
         mavenCentral()
+        jcenter()
     }
 }
 
@@ -31,3 +40,5 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
     testCompile "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
 }
+
+apply from: 'deploy.gradle'

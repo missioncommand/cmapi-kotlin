@@ -1,5 +1,4 @@
 apply plugin: 'kotlin-platform-jvm'
-
 jar {
 
     version = "$release_version"
@@ -8,8 +7,6 @@ jar {
         configurations.compile.collect {
             it.isDirectory() ? it : zipTree(it)
         }
-
-
     }
 }
 
