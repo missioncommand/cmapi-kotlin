@@ -30,10 +30,6 @@ install {
     }
 }
 
-Properties properties = new Properties()
-File propFile = "${project.rootDir}${File.separator}.gradle${File.separator}bintray.properties" as File
-properties.load(propFile.newDataInputStream())
-
 allprojects{
 
     apply plugin: 'idea'
@@ -42,8 +38,19 @@ allprojects{
     version = release_version
 
     bintray {
-        user = properties.getProperty("bintray.user")
-        key = properties.getProperty("bintray.apikey")
+        /**
+         * Developers on this project need their login information
+         * setup as follows:
+         *
+         * Set gradle variables in ~/.gradle/gradle.properties
+         *     bintrayUser = john.doe
+         *     bintrayApiKey = <located in your Bintray account under edit Profile -> API keys>
+         *
+         *     * Be sure to set your ~/.gradle/gradle.properties
+         *     permissions to 600
+         */
+        user = bintrayUser
+        key = bintrayApiKey
         description = artifact.description
 
         configurations = ['archives']
