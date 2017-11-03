@@ -31,7 +31,7 @@ plugins {
 
 
 apply plugin: 'kotlin-platform-common'
-//apply from: "$project.rootDir/gradle/lintRules.gradle"
+apply from: "$project.rootDir/gradle/lintRules.gradle"
 
 allprojects {
     // Manage global repository dependencies
@@ -45,6 +45,5 @@ allprojects {
 }
 
 dependencies {
-    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
-//    testCompile "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
 }
