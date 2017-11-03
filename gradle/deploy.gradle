@@ -1,0 +1,73 @@
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+def artifact = new Properties()
+artifact.load(new FileInputStream("$project.rootDir${File.separator}gradle${File.separator}deploy.settings"))
+
+version=release_version
+group=artifact.groupId
+
+install {
+    repositories.mavenInstaller {
+        pom.project {
+            packaging 'jar'
+            groupId artifact.groupId
+            artifactId artifact.id
+            version release_version
+            name artifact.id // pom.project.name must be same as bintray.pkg.name
+
+            licenses {
+                license { // HARDCODED
+                    name 'Apache-2.0'
+                    distribution 'repo'
+                }
+            }
+            scm {
+                connection artifact.gitUrl
+                developerConnection artifact.gitUrl
+            }
+        }
+    }
+}
+
+allprojects{
+
+    apply plugin: 'idea'
+    apply plugin: 'com.jfrog.bintray'
+
+    version = release_version
+
+    bintray {
+        /**
+         * Developers on this project need their login information
+         * setup as follows:
+         *
+         * Set gradle variables in ~/.gradle/gradle.properties
+         *     bintrayUser = john.doe
+         *     bintrayApiKey = <located in your Bintray account under edit Profile -> API keys>
+         *
+         *     * Be sure to set your ~/.gradle/gradle.properties
+         *     permissions to 600
+         */
+        user = bintrayUser
+        key = bintrayApiKey
+        description = artifact.description
+
+        configurations = ['archives']
+        pkg {
+            repo = rootProject.name
+            name = artifact.id
+            desc = artifact.description
+            websiteUrl = artifact.siteUrl
+            githubRepo = 'GitHubRGI/cmapi-kotlin'
+            vcsUrl = artifact.gitUrl
+            githubReleaseNotesFile = 'README.md'
+            userOrg="rgi"
+            licenses = ['Apache-2.0']
+            publish = true
+            version {
+                name = artifact.version
+            }
+        }
+    }
+}
