@@ -1,23 +1,23 @@
 apply plugin: 'kotlin-platform-jvm'
+apply from: "$project.rootDir/gradle/deploy.gradle"
 
 jar {
-
     version = "$release_version"
-
     from {
         configurations.compile.collect {
             it.isDirectory() ? it : zipTree(it)
         }
-
-
     }
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     expectedBy project(":")
-    testCompile "junit:junit:4.12"
-    testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
-    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
-}
 
+    // Compile/implementation dependencies
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // Test dependencies
+    testImplementation "junit:junit:4.12"
+    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+}
