@@ -1,0 +1,21 @@
+/**
+ * Linting rules for the nebula.lint plugin
+ */
+
+gradleLint {
+    rules = [
+        // The following rules generate a build-time error
+        //'all-dependency',
+        //'overridden-dependency-version',
+        //'duplicate-dependency-class',
+        'all-nebula-renames',
+        'unused-exclude-by-dep',
+        'unused-exclude-by-conf',
+        'dependency-parentheses',
+        'dependency-tuple'
+    ]
+    criticalRules = [
+        'unused-dependency',
+        'archaic-wrapper'
+    ]
+}

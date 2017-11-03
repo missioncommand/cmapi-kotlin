@@ -1,0 +1,5 @@
+gitUrl=https://github.com/GitHubRGI/cmapi-kotlin.git
+groupId=cmapi-multi
+id=cmapi-kotlin
+siteUrl=https://github.com/GitHubRGI/cmapi-kotlin
+description=A port of the Common Map API for the Kotlin language, supporting both Java and Javascript in a single baseline.
