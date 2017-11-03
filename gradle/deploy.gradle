@@ -2,7 +2,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 def artifact = new Properties()
-artifact.load(new FileInputStream("deploy.settings"))
+artifact.load(new FileInputStream("$project.rootDir${File.separator}gradle${File.separator}deploy.settings"))
 
 version=release_version
 group=artifact.groupId
@@ -13,7 +13,7 @@ install {
             packaging 'jar'
             groupId artifact.groupId
             artifactId artifact.id
-            version artifact.version
+            version release_version
             name artifact.id // pom.project.name must be same as bintray.pkg.name
 
             licenses {
@@ -31,7 +31,7 @@ install {
 }
 
 Properties properties = new Properties()
-File propFile = "${System.getProperty("user.dir")}${File.separator}.gradle${File.separator}bintray.properties" as File
+File propFile = "${project.rootDir}${File.separator}.gradle${File.separator}bintray.properties" as File
 properties.load(propFile.newDataInputStream())
 
 allprojects{
@@ -44,14 +44,18 @@ allprojects{
     bintray {
         user = properties.getProperty("bintray.user")
         key = properties.getProperty("bintray.apikey")
+        description = artifact.description
 
         configurations = ['archives']
         pkg {
-            repo = "cmapi-kotlin"
+            repo = rootProject.name
             name = artifact.id
+            desc = artifact.description
             websiteUrl = artifact.siteUrl
-            userOrg="rgi"
+            githubRepo = 'GitHubRGI/cmapi-kotlin'
             vcsUrl = artifact.gitUrl
+            githubReleaseNotesFile = 'README.md'
+            userOrg="rgi"
             licenses = ['Apache-2.0']
             publish = true
             version {

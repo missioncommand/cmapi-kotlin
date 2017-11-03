@@ -1,4 +1,5 @@
 apply plugin: 'kotlin-platform-js'
+apply from: "$project.rootDir/gradle/deploy.gradle"
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"

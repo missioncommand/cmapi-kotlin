@@ -2,7 +2,7 @@ buildscript {
     ext {
         kotlin_version = '1.2.0-beta-88'
         // Release version of the artifact
-        release_version = '1.2.0.0-SNAPSHOT'
+        release_version = '1.1.0.0-SNAPSHOT'
         jfrog_version = '1.7.3'
     }
     repositories {
@@ -23,7 +23,15 @@ buildscript {
     }
 }
 
+plugins {
+    // Linting plugin for gradle files
+    // Rules are located in gradle/lintRules.gradle
+    id 'nebula.lint' version '8.3.1'
+}
+
+
 apply plugin: 'kotlin-platform-common'
+//apply from: "$project.rootDir/gradle/lintRules.gradle"
 
 allprojects {
     // Manage global repository dependencies
@@ -37,8 +45,6 @@ allprojects {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
-    testCompile "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
+//    testCompile "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
 }
-
-apply from: 'deploy.gradle'
