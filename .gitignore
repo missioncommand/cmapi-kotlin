@@ -1,0 +1,6 @@
+build/
+cmapi-multi-js/build/
+cmapi-multi-jvm/build/
+
+.idea/
+.gradle/

@@ -1,0 +1,3 @@
+rootProject.name = 'cmapi-multi'
+
+include 'cmapi-multi-jvm', 'cmapi-multi-js'

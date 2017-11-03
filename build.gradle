@@ -1,0 +1,33 @@
+buildscript {
+    ext {
+        kotlin_version = '1.2.0-beta-88'
+        // Release version of the artifact
+        release_version = '1.0.0.0'
+    }
+    repositories {
+        maven {
+            url kotlinBintray
+        }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'kotlin-platform-common'
+
+allprojects {
+    // Manage global repository dependencies
+    repositories {
+        maven {
+            url kotlinBintray
+        }
+        mavenCentral()
+    }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
+    testCompile "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version"
+}
