@@ -1,25 +1,28 @@
+// Buildscript MUST be the first block in a build.gradle
+// file
 buildscript {
     ext {
+        amgp_version = '2.0'
+        jfrog_version = '1.7.3'
         kotlin_version = '1.2.0-beta-88'
         // Release version of the artifact
         release_version = '1.1.0.0-SNAPSHOT'
-        jfrog_version = '1.7.3'
     }
     repositories {
         maven {
+            // URL is defined in gradle.properties 
             url kotlinBintray
         }
         mavenCentral()
         jcenter()
     }
     dependencies {
-
         //Kotlin Dependency
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         //Bintray Dependency
         classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$jfrog_version"
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath "com.github.dcendents:android-maven-gradle-plugin:$amgp_version"
     }
 }
 
@@ -29,11 +32,12 @@ plugins {
     id 'nebula.lint' version '8.3.1'
 }
 
-
 apply plugin: 'kotlin-platform-common'
-apply from: "$project.rootDir/gradle/lintRules.gradle"
 
 allprojects {
+    // Apply linting rules to all projects
+    apply from: "$project.rootDir/gradle/lintRules.gradle"
+
     // Manage global repository dependencies
     repositories {
         maven {
@@ -45,5 +49,7 @@ allprojects {
 }
 
 dependencies {
+    // Kotlin standard library is needed for the multi-platform files in the 
+    // source directory of the project root
     implementation "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
 }
