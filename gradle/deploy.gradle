@@ -52,7 +52,6 @@ allprojects{
         user = bintrayUser
         key = bintrayApiKey
         description = artifact.description
-        override=true
         configurations = ['archives']
         pkg {
             repo = "maven"
