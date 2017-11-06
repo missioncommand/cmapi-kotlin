@@ -1,13 +1,12 @@
 apply plugin: 'kotlin-platform-jvm'
+apply plugin: 'com.github.johnrengelman.shadow'
 apply from: "$project.rootDir/gradle/deploy.gradle"
 
-jar {
+
+shadowJar {
     version = "$release_version"
-    from {
-        configurations.compile.collect {
-            it.isDirectory() ? it : zipTree(it)
-        }
-    }
+    baseName = "cmapi-multi-jvm"
+    classifier = null
 }
 
 dependencies {
@@ -20,4 +19,10 @@ dependencies {
     testImplementation "junit:junit:4.12"
     testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
     testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+
+    //shadow jar dependencies
+    shadow 'junit:junit:3.8.2'
 }
+
+build.dependsOn shadowJar
+bintrayUpload.dependsOn shadowJar

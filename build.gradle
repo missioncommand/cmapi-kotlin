@@ -6,7 +6,7 @@ buildscript {
         jfrog_version = '1.7.3'
         kotlin_version = '1.2.0-beta-88'
         // Release version of the artifact
-        release_version = '1.1.0.0-SNAPSHOT'
+        release_version = '1.0.0.0'
     }
     repositories {
         maven {
@@ -23,6 +23,9 @@ buildscript {
         //Bintray Dependency
         classpath "com.jfrog.bintray.gradle:gradle-bintray-plugin:$jfrog_version"
         classpath "com.github.dcendents:android-maven-gradle-plugin:$amgp_version"
+
+        //fat jar Dependency
+        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
     }
 }
 
@@ -36,7 +39,7 @@ apply plugin: 'kotlin-platform-common'
 
 allprojects {
     // Apply linting rules to all projects
-    apply from: "$project.rootDir/gradle/lintRules.gradle"
+//    apply from: "$project.rootDir/gradle/lintRules.gradle"
 
     // Manage global repository dependencies
     repositories {

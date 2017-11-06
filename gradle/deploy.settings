@@ -1,5 +1,5 @@
-gitUrl=https://github.com/GitHubRGI/cmapi-kotlin.git
-groupId=cmapi-multi
+gitUrl=git@github.com:missioncommand/cmapi-kotlin.git
+groupId=cmapi-kotlin
 id=cmapi-kotlin
-siteUrl=https://github.com/GitHubRGI/cmapi-kotlin
+siteUrl=https://github.com/missioncommand/cmapi-kotlin
 description=A port of the Common Map API for the Kotlin language, supporting both Java and Javascript in a single baseline.
