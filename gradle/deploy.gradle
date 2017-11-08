@@ -52,17 +52,16 @@ allprojects{
         user = bintrayUser
         key = bintrayApiKey
         description = artifact.description
-
         configurations = ['archives']
         pkg {
-            repo = rootProject.name
+            repo = "maven"
             name = artifact.id
             desc = artifact.description
             websiteUrl = artifact.siteUrl
-            githubRepo = 'GitHubRGI/cmapi-kotlin'
+            githubRepo = 'missioncommand/cmapi-kotlin'
             vcsUrl = artifact.gitUrl
             githubReleaseNotesFile = 'README.md'
-            userOrg="rgi"
+            userOrg="missioncommand"
             licenses = ['Apache-2.0']
             publish = true
             version {
