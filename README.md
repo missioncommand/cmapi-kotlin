@@ -1,6 +1,3 @@
-
-# cmapi-kotlin
-=======
 # Common Map API (CMAPI)-Kotlin
 A port of the [Common Map API version 2][1] for the Kotlin language, supporting both Java and Javascript in a single baseline. 
 
@@ -31,6 +28,3 @@ the [Kotlin Documentation][3] where it says to use ``` npm install kotlin```.
  [1]: https://github.com/cmapi/cmapi2
  [2]: https://blog.jetbrains.com/kotlin/2017/10/kotlin-1-2-beta2-is-out/
  [3]: https://kotlinlang.org/docs/reference/js-modules.html#notes
-
- 
-
