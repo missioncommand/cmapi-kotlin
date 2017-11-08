@@ -6,7 +6,7 @@ interface IGeoPositionGroup : IGeoAltitudeMode
 {
     var positions: MutableList<IGeoPosition>
 
-    var timeStamp: MpDate
+    var timeStamp: MpDate?
 
     var timeSpans: MutableList<IGeoTimeSpan>
 }

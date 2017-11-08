@@ -4,5 +4,5 @@ interface IGeoPoint : IGeoRenderable {
 
     var iconStyle: IGeoIconStyle
 
-    var iconURI: String
+    var iconURI: String?
 }

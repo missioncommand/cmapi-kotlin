@@ -8,11 +8,11 @@ interface IGeoLabelStyle {
 
     var outlineColor: IGeoColor
 
-    var justification: Justification
+    var justification: Justification?
 
-    var fontFamily: String
+    var fontFamily: String?
 
-    var typeface: Typeface
+    var typeface: Typeface?
 
     enum class Typeface private constructor() {
         REGULAR,

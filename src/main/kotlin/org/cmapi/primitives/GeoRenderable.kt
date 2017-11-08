@@ -7,7 +7,7 @@ open class GeoRenderable : GeoContainer(), IGeoRenderable
 {
     override var altitudeMode: IGeoAltitudeMode.AltitudeMode? = null
     override var positions: MutableList<IGeoPosition> = ArrayList()
-    override var timeStamp: MpDate = MpDate()
+    override var timeStamp: MpDate? = null
     override var timeSpans: MutableList<IGeoTimeSpan> = ArrayList()
     override var labelStyle: IGeoLabelStyle? = GeoLabelStyle()
     override var strokeStyle: IGeoStrokeStyle? = GeoStrokeStyle()
@@ -16,7 +16,7 @@ open class GeoRenderable : GeoContainer(), IGeoRenderable
     override var tessellate = true
     override var buffer = 0.0
     override var azimuth = 0.0
-    override var pathType: IGeoRenderable.PathType = IGeoRenderable.PathType.LINEAR
+    override var pathType: IGeoRenderable.PathType? = null
 
     init
     {

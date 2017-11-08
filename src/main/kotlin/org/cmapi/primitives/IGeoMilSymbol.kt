@@ -3,11 +3,11 @@ package org.cmapi.primitives
 
 interface IGeoMilSymbol : IGeoRenderable {
 
-    var symbolStandard: SymbolStandard
+    var symbolStandard: SymbolStandard?
 
-    var symbolCode: String
+    var symbolCode: String?
 
-    var modifiers: HashMap<Modifier, String>
+    var modifiers: HashMap<Modifier, String>?
 
     enum class Modifier private constructor(private val value: String) {
         SYMBOL_ICON("A"),
