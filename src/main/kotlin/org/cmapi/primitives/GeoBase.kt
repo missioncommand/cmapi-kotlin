@@ -5,9 +5,9 @@ import multiplatform.expected.MpUUID
 
 open class GeoBase : IGeoBase
 {
-    override var name = ""
-    override var geoId: MpUUID = GetUUIDFunction.randomUUID()
+    override var name : String? = ""
+    override var geoId: MpUUID? = GetUUIDFunction.randomUUID()
     override var dataProviderId: String? = null
-    override var description = ""
-    override val properties : HashMap<String, String> = hashMapOf()
+    override var description : String? = ""
+    override val properties : HashMap<String, String>? = hashMapOf()
 }

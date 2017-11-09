@@ -4,9 +4,9 @@ interface IGeoLabelStyle {
 
     var size: Double
 
-    var color: IGeoColor
+    var color: IGeoColor?
 
-    var outlineColor: IGeoColor
+    var outlineColor: IGeoColor?
 
     var justification: Justification?
 
