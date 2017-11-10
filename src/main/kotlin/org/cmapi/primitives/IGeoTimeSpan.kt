@@ -5,7 +5,7 @@ import multiplatform.expected.MpDate
 
 interface IGeoTimeSpan {
 
-    var begin: MpDate
+    var begin: MpDate?
 
-    var end: MpDate
+    var end: MpDate?
 }

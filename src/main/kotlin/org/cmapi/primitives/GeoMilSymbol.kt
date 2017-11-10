@@ -2,9 +2,9 @@ package org.cmapi.primitives
 
 open class GeoMilSymbol : GeoRenderable(), IGeoMilSymbol
 {
-    override var symbolStandard: IGeoMilSymbol.SymbolStandard = IGeoMilSymbol.SymbolStandard.MIL_STD_2525C
-    override var symbolCode: String = ""
-    override var modifiers: HashMap<IGeoMilSymbol.Modifier, String> = HashMap()
+    override var symbolStandard: IGeoMilSymbol.SymbolStandard? = null
+    override var symbolCode: String? = null
+    override var modifiers: HashMap<IGeoMilSymbol.Modifier, String>? = null
 
     init
     {

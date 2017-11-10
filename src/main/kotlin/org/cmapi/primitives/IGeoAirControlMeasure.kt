@@ -2,9 +2,9 @@ package org.cmapi.primitives
 
 interface IGeoAirControlMeasure : IGeoRenderable {
 
-    var acmType: AcmType
+    var acmType: AcmType?
 
-    var attributes: HashMap<Attribute, String>
+    var attributes: HashMap<Attribute, String>?
 
     enum class Attribute private constructor() {
         RADIUS,
