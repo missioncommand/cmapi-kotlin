@@ -1,3 +1,3 @@
-rootProject.name = 'cmapi-multi'
+rootProject.name = 'cmapi-kotlin'
 
-include 'cmapi-multi-jvm', 'cmapi-multi-js'
+include 'cmapi-kotlin-jvm', 'cmapi-kotlin-js'
