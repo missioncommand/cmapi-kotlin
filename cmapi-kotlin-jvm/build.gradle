@@ -5,7 +5,7 @@ apply from: "$project.rootDir/gradle/deploy.gradle"
 
 shadowJar {
     version = "$release_version"
-    baseName = "cmapi-multi-jvm"
+    baseName = "cmapi-kotlin-jvm"
     classifier = null
 }
 

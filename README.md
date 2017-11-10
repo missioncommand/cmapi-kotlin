@@ -14,10 +14,10 @@ run
  ./gradlew build
 ```
 #### Jar File
-The exported jar will be located in the directory: *cmapi-multi-jvm/build/libs/cmapi-multi-jvm.jar*
+The exported jar will be located in the directory: *cmapi-kotlin-jvm/build/libs/cmapi-multi-jvm.jar*
 
 #### Javascript File
-The exported javascript will be located in the directory: *cmapi-multi-js/build/classes/main/cmapi-multi-js.js*
+The exported javascript will be located in the directory: *cmapi-kotlin-js/build/classes/main/cmapi-multi-js.js*
 
 #### Javascript dependencies
 When using the Javascript file exported, you will also need the kotlin.js Javascript module. Please refer to 
