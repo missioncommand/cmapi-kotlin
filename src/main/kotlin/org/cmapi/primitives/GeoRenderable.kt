@@ -5,7 +5,7 @@ import multiplatform.expected.MpDate
 
 open class GeoRenderable : GeoContainer(), IGeoRenderable
 {
-    override var altitudeMode: IGeoAltitudeMode.AltitudeMode = IGeoAltitudeMode.AltitudeMode.UNKNOWN
+    override var altitudeMode: IGeoAltitudeMode.AltitudeMode = IGeoAltitudeMode.AltitudeMode.RELATIVE_TO_GROUND
     override var positions: List<IGeoPosition> = arrayListOf()
     override var timeStamp: MpDate = MpDate()
     override var timeSpans: List<IGeoTimeSpan> = arrayListOf()

@@ -2,7 +2,7 @@ package org.cmapi.primitives
 
 open class GeoCamera : GeoBase(), IGeoCamera
 {
-    override var altitudeMode: IGeoAltitudeMode.AltitudeMode = IGeoAltitudeMode.AltitudeMode.UNKNOWN
+    override var altitudeMode: IGeoAltitudeMode.AltitudeMode = IGeoAltitudeMode.AltitudeMode.RELATIVE_TO_GROUND
     override var latitude = 0.0
     override var longitude = 0.0
     override var altitude = 0.0

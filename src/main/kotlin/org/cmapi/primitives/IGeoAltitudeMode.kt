@@ -7,7 +7,6 @@ interface IGeoAltitudeMode
 
     enum class AltitudeMode
     {
-        UNKNOWN,
         CLAMP_TO_GROUND,
         RELATIVE_TO_GROUND,
         ABSOLUTE
