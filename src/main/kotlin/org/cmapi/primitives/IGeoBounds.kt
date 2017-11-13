@@ -1,7 +1,7 @@
 package org.cmapi.primitives
 
-interface IGeoBounds {
-
+interface IGeoBounds
+{
     var west: Double
 
     var east: Double

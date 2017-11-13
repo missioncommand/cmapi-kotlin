@@ -1,7 +1,7 @@
 package org.cmapi.primitives
 
-interface IGeoColor {
-
+interface IGeoColor
+{
     var red: Int
 
     var green: Int

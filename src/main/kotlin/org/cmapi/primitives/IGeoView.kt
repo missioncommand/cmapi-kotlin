@@ -1,12 +1,12 @@
 package org.cmapi.primitives
 
-interface IGeoView {
+interface IGeoView
+{
+    var camera: IGeoCamera
 
-    var camera: IGeoCamera?
+    var lookAt: IGeoLookAt
 
-    var lookAt: IGeoLookAt?
-
-    var bounds: IGeoBounds?
+    var bounds: IGeoBounds
 
     var scale: Double
 }

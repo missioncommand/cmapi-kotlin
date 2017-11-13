@@ -1,8 +1,8 @@
 package org.cmapi.primitives
 
-interface IGeoStrokeStyle {
-
-    var strokeColor: IGeoColor?
+interface IGeoStrokeStyle
+{
+    var strokeColor: IGeoColor
 
     var stipplingPattern: Short
 

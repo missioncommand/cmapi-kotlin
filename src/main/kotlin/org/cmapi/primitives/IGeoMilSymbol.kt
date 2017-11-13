@@ -1,15 +1,16 @@
 package org.cmapi.primitives
 
 
-interface IGeoMilSymbol : IGeoRenderable {
+interface IGeoMilSymbol : IGeoRenderable
+{
+    var symbolStandard: SymbolStandard
 
-    var symbolStandard: SymbolStandard?
+    var symbolCode: String
 
-    var symbolCode: String?
+    var modifiers: HashMap<Modifier, String>
 
-    var modifiers: HashMap<Modifier, String>?
-
-    enum class Modifier private constructor(private val value: String) {
+    enum class Modifier private constructor(private val value: String)
+    {
         SYMBOL_ICON("A"),
         ECHELON("B"),
         QUANTITY("C"),
@@ -56,12 +57,14 @@ interface IGeoMilSymbol : IGeoRenderable {
         COUNTRY_CODE("CC"),
         SONAR_CLASSIFICATION_CONFIDENCE("SCC");
 
-        fun valueOf(): String {
+        fun valueOf(): String
+        {
             return this.value
         }
     }
 
-    enum class SymbolStandard private constructor() {
+    enum class SymbolStandard private constructor()
+    {
         MIL_STD_2525C,
         MIL_STD_2525B
     }

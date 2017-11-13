@@ -1,12 +1,12 @@
 package org.cmapi.primitives
 
-interface IGeoRenderable : IGeoContainer, IGeoPositionGroup {
+interface IGeoRenderable : IGeoContainer, IGeoPositionGroup
+{
+    var labelStyle: IGeoLabelStyle
 
-    var labelStyle: IGeoLabelStyle?
+    var strokeStyle: IGeoStrokeStyle
 
-    var strokeStyle: IGeoStrokeStyle?
-
-    var fillStyle: IGeoFillStyle?
+    var fillStyle: IGeoFillStyle
 
     var extrude: Boolean
 
@@ -16,9 +16,10 @@ interface IGeoRenderable : IGeoContainer, IGeoPositionGroup {
 
     var azimuth: Double
 
-    var pathType: PathType?
+    var pathType: PathType
 
-    enum class PathType private constructor() {
+    enum class PathType private constructor()
+    {
         GREAT_CIRCLE,
         LINEAR,
         RHUMB_LINE

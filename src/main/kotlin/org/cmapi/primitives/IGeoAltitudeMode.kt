@@ -1,10 +1,13 @@
 package org.cmapi.primitives
 
-interface IGeoAltitudeMode {
+interface IGeoAltitudeMode
+{
 
-    var altitudeMode: AltitudeMode?
+    var altitudeMode: AltitudeMode
 
-    enum class AltitudeMode {
+    enum class AltitudeMode
+    {
+        UNKNOWN,
         CLAMP_TO_GROUND,
         RELATIVE_TO_GROUND,
         ABSOLUTE

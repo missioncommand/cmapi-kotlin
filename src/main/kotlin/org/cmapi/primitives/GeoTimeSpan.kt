@@ -4,6 +4,6 @@ import multiplatform.expected.MpDate
 
 open class GeoTimeSpan : IGeoTimeSpan
 {
-    override var begin: MpDate? = null
-    override var end: MpDate? = null
+    override var begin: MpDate = MpDate()
+    override var end: MpDate = MpDate()
 }
