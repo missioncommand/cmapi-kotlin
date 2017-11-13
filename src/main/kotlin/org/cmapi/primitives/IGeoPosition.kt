@@ -1,7 +1,7 @@
 package org.cmapi.primitives
 
-interface IGeoPosition {
-
+interface IGeoPosition
+{
     var latitude: Double
 
     var longitude: Double

@@ -1,27 +1,29 @@
 package org.cmapi.primitives
 
-interface IGeoLabelStyle {
-
+interface IGeoLabelStyle
+{
     var size: Double
 
-    var color: IGeoColor?
+    var color: IGeoColor
 
-    var outlineColor: IGeoColor?
+    var outlineColor: IGeoColor
 
-    var justification: Justification?
+    var justification: Justification
 
-    var fontFamily: String?
+    var fontFamily: String
 
-    var typeface: Typeface?
+    var typeface: Typeface
 
-    enum class Typeface private constructor() {
+    enum class Typeface
+    {
         REGULAR,
         BOLD,
         ITALIC,
         BOLDITALIC
     }
 
-    enum class Justification private constructor() {
+    enum class Justification
+    {
         LEFT,
         CENTER,
         RIGHT

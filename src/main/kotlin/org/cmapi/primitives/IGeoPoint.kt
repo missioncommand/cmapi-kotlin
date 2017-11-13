@@ -1,8 +1,8 @@
 package org.cmapi.primitives
 
-interface IGeoPoint : IGeoRenderable {
+interface IGeoPoint : IGeoRenderable
+{
+    var iconStyle: IGeoIconStyle
 
-    var iconStyle: IGeoIconStyle?
-
-    var iconURI: String?
+    var iconURI: String
 }

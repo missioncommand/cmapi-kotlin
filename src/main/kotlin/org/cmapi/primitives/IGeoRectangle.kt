@@ -1,7 +1,7 @@
 package org.cmapi.primitives
 
-interface IGeoRectangle : IGeoRenderable {
-
+interface IGeoRectangle : IGeoRenderable
+{
     var width: Double
 
     var height: Double

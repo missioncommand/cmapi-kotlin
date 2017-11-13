@@ -2,7 +2,7 @@ package org.cmapi.primitives
 
 interface IGeoDocument : IGeoBase
 {
-    var documentURI: String?
+    var documentURI: String
 
-    var documentMIMEType: String?
+    var documentMIMEType: String
 }

@@ -1,12 +1,14 @@
 package org.cmapi.primitives
 
-interface IGeoAirControlMeasure : IGeoRenderable {
+interface IGeoAirControlMeasure : IGeoRenderable
+{
 
-    var acmType: AcmType?
+    var acmType: AcmType
 
-    var attributes: HashMap<Attribute, String>?
+    var attributes: HashMap<Attribute, String>
 
-    enum class Attribute private constructor() {
+    enum class Attribute
+    {
         RADIUS,
         INNER_RADIUS,
         TURN,
@@ -19,7 +21,9 @@ interface IGeoAirControlMeasure : IGeoRenderable {
         RIGHT_WIDTH
     }
 
-    enum class AcmType private constructor() {
+    enum class AcmType
+    {
+        UNKNOWN,
         ROUTE,
         CYLINDER,
         ORBIT,

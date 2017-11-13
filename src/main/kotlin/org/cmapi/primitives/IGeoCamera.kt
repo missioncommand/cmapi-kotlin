@@ -1,7 +1,7 @@
 package org.cmapi.primitives
 
-interface IGeoCamera : IGeoAltitudeMode, IGeoPosition, IGeoBase {
-
+interface IGeoCamera : IGeoAltitudeMode, IGeoPosition, IGeoBase
+{
     var tilt: Double
 
     var roll: Double
