@@ -1,7 +1,7 @@
 package org.cmapi.primitives
 
-interface IGeoIconStyle {
-
+interface IGeoIconStyle
+{
     var size: Double
 
     var offSetX: Double

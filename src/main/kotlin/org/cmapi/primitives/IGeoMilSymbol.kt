@@ -9,7 +9,7 @@ interface IGeoMilSymbol : IGeoRenderable
 
     var modifiers: HashMap<Modifier, String>
 
-    enum class Modifier private constructor(private val value: String)
+    enum class Modifier(private val value: String)
     {
         SYMBOL_ICON("A"),
         ECHELON("B"),
@@ -57,13 +57,10 @@ interface IGeoMilSymbol : IGeoRenderable
         COUNTRY_CODE("CC"),
         SONAR_CLASSIFICATION_CONFIDENCE("SCC");
 
-        fun valueOf(): String
-        {
-            return this.value
-        }
+        fun valueOf(): String = this.value
     }
 
-    enum class SymbolStandard private constructor()
+    enum class SymbolStandard
     {
         MIL_STD_2525C,
         MIL_STD_2525B

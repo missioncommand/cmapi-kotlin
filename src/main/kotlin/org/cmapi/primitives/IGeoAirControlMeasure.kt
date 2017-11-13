@@ -7,7 +7,7 @@ interface IGeoAirControlMeasure : IGeoRenderable
 
     var attributes: HashMap<Attribute, String>
 
-    enum class Attribute private constructor()
+    enum class Attribute
     {
         RADIUS,
         INNER_RADIUS,
@@ -21,7 +21,7 @@ interface IGeoAirControlMeasure : IGeoRenderable
         RIGHT_WIDTH
     }
 
-    enum class AcmType private constructor()
+    enum class AcmType
     {
         UNKNOWN,
         ROUTE,

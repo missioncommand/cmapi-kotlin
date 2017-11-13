@@ -6,7 +6,7 @@ interface IGeoFillStyle
     var fillColor: IGeoColor
     var fillPattern: FillPattern
 
-    enum class FillPattern private constructor()
+    enum class FillPattern
     {
         solid,
         hatched,

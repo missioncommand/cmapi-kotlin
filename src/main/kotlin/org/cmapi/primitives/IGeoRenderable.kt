@@ -18,7 +18,7 @@ interface IGeoRenderable : IGeoContainer, IGeoPositionGroup
 
     var pathType: PathType
 
-    enum class PathType private constructor()
+    enum class PathType
     {
         GREAT_CIRCLE,
         LINEAR,
