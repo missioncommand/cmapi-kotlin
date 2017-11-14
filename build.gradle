@@ -7,6 +7,8 @@ buildscript {
         kotlin_version = '1.2.0-beta-88'
         // Release version of the artifact
         release_version = '2.0.0.0'
+
+        dokka_version = '0.9.15'
     }
     repositories {
         maven {
@@ -26,6 +28,9 @@ buildscript {
 
         //Shadow jar Dependency
         classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+
+        //Documentation Dependency
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:${dokka_version}"
     }
 }
 
