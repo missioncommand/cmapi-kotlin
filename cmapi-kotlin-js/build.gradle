@@ -1,9 +1,31 @@
 apply plugin: 'kotlin-platform-js'
 apply from: "$project.rootDir/gradle/deploy.gradle"
+apply plugin: 'com.moowork.node'
 
 dependencies {
     expectedBy project(":")
 
     // Compile/implementation dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+
+
 }
+
+compileKotlin2Js{
+    kotlinOptions.moduleKind = "commonjs"
+    kotlinOptions.outputFile = "$project.buildDir.path/js/${project.name}.js"
+}
+
+node{
+    version= '5.9.0'
+//    npmVersion ='3.8.0'
+    download = true
+    // distBaseUrl = Custom artifactory location here for node/npm.
+}
+//
+//war{
+//    baseName = 'cmapi-kotlin-js'
+//    version = release_version
+//}
+//
+//task
