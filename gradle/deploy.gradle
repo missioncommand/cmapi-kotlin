@@ -69,9 +69,7 @@ allprojects{
             attributes            = [:]
 
             githubReleaseNotesFile = 'README.md'
-
             githubRepo = 'missioncommand/cmapi-kotlin'
-
 
             publish = true
             version {
@@ -94,8 +92,3 @@ publishing {
         }
     }
 }
-
-
-
-
-
