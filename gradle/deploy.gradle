@@ -36,6 +36,10 @@ allprojects{
 
     apply plugin: 'idea'
     apply plugin: 'com.jfrog.bintray'
+    apply plugin: 'nebula.maven-base-publish'
+    apply plugin: 'nebula.maven-nebula-publish'
+    apply plugin: 'nebula.source-jar'
+    apply plugin: 'nebula.javadoc-jar'
 
     version = release_version
 
@@ -55,7 +59,8 @@ allprojects{
         key = bintrayApiKey
         description = artifact.description
         configurations = ['archives']
-        publications = ['MyPublication']
+        publications = ['nebula']
+        override = true
         pkg {
             userOrg="missioncommand"
             repo = "maven"
@@ -81,14 +86,7 @@ allprojects{
     }
 }
 
-
-publishing {
-    publications {
-        MyPublication(MavenPublication) {
-            from components.java
-            groupId artifact.groupId
-            artifactId artifact.id
-            version release_version
-        }
+publishing.publications {
+    nebula(MavenPublication) {
     }
 }

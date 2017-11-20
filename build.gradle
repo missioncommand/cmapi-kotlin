@@ -26,6 +26,9 @@ buildscript {
 
         //Shadow jar Dependency
         classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+
+        //Publishing maven artifacts to Bintray Dependency
+        classpath 'com.netflix.nebula:nebula-publishing-plugin:5.1.1'
     }
 }
 
