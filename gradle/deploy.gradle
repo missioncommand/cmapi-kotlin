@@ -1,6 +1,10 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
+apply plugin: 'nebula.maven-base-publish'
+apply plugin: 'nebula.maven-nebula-publish'
+apply plugin: 'nebula.source-jar'
+apply plugin: 'nebula.javadoc-jar'
 
 def artifact = new Properties()
 artifact.load(new FileInputStream("$project.rootDir${File.separator}gradle${File.separator}deploy.settings"))
@@ -36,10 +40,6 @@ allprojects{
 
     apply plugin: 'idea'
     apply plugin: 'com.jfrog.bintray'
-    apply plugin: 'nebula.maven-base-publish'
-    apply plugin: 'nebula.maven-nebula-publish'
-    apply plugin: 'nebula.source-jar'
-    apply plugin: 'nebula.javadoc-jar'
 
     version = release_version
 
@@ -60,7 +60,6 @@ allprojects{
         description = artifact.description
         configurations = ['archives']
         publications = ['nebula']
-        override = true
         pkg {
             userOrg="missioncommand"
             repo = "maven"
