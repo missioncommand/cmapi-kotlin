@@ -1,5 +1,10 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
+apply plugin: 'nebula.maven-base-publish'
+apply plugin: 'nebula.maven-nebula-publish'
+apply plugin: 'nebula.source-jar'
+apply plugin: 'nebula.javadoc-jar'
 
 def artifact = new Properties()
 artifact.load(new FileInputStream("$project.rootDir${File.separator}gradle${File.separator}deploy.settings"))
@@ -14,6 +19,7 @@ install {
             groupId artifact.groupId
             artifactId artifact.id
             version release_version
+            description artifact.description
             name artifact.id // pom.project.name must be same as bintray.pkg.name
 
             licenses {
@@ -53,20 +59,33 @@ allprojects{
         key = bintrayApiKey
         description = artifact.description
         configurations = ['archives']
+        publications = ['nebula']
         pkg {
+            userOrg = "missioncommand"
             repo = "maven"
             name = artifact.id
             desc = artifact.description
-            websiteUrl = artifact.siteUrl
-            githubRepo = 'missioncommand/cmapi-kotlin'
-            vcsUrl = artifact.gitUrl
-            githubReleaseNotesFile = 'README.md'
-            userOrg="missioncommand"
+
             licenses = ['Apache-2.0']
+
+            vcsUrl = artifact.gitUrl
+            websiteUrl = artifact.siteUrl
+            attributes = [:]
+
+            githubReleaseNotesFile = 'README.md'
+            githubRepo = 'missioncommand/cmapi-kotlin'
+
             publish = true
             version {
                 name = artifact.version
+                vcsTag     = "v${project.version}"
+                attributes = [:]
             }
         }
+    }
+}
+
+publishing.publications {
+    nebula(MavenPublication) {
     }
 }
