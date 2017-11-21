@@ -13,19 +13,10 @@ dependencies {
 
 compileKotlin2Js{
     kotlinOptions.moduleKind = "commonjs"
-    kotlinOptions.outputFile = "$project.buildDir.path/js/${project.name}.js"
+    kotlinOptions.outputFile = "${project.projectDir}/node/cmapi.js"
 }
 
 node{
     version= '5.9.0'
-//    npmVersion ='3.8.0'
     download = true
-    // distBaseUrl = Custom artifactory location here for node/npm.
 }
-//
-//war{
-//    baseName = 'cmapi-kotlin-js'
-//    version = release_version
-//}
-//
-//task

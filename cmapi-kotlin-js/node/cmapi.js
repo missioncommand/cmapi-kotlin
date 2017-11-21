@@ -2495,6 +2495,6 @@
   package$primitives.IGeoText = IGeoText;
   package$primitives.IGeoTimeSpan = IGeoTimeSpan;
   package$primitives.IGeoView = IGeoView;
-  Kotlin.defineModule('index', _);
+  Kotlin.defineModule('cmapi', _);
   return _;
 }(module.exports, require('kotlin')));
