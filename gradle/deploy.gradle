@@ -61,7 +61,7 @@ allprojects{
         configurations = ['archives']
         publications = ['nebula']
         pkg {
-            userOrg="missioncommand"
+            userOrg = "missioncommand"
             repo = "maven"
             name = artifact.id
             desc = artifact.description
@@ -70,7 +70,7 @@ allprojects{
 
             vcsUrl = artifact.gitUrl
             websiteUrl = artifact.siteUrl
-            attributes            = [:]
+            attributes = [:]
 
             githubReleaseNotesFile = 'README.md'
             githubRepo = 'missioncommand/cmapi-kotlin'
