@@ -4,7 +4,7 @@ buildscript {
     ext {
         amgp_version = '2.0'
         jfrog_version = '1.7.3'
-        kotlin_version = '1.2.0-beta-88'
+        kotlin_version = '1.2.0-rc-84'
         // Release version of the artifact
         release_version = '2.0.0.0'
 

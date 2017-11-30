@@ -1,7 +1,7 @@
 build/
 cmapi-kotlin-js/build/
 cmapi-kotlin-jvm/build/
-
+node
 node_modules
 .idea/
 .gradle/

@@ -13,7 +13,8 @@ dependencies {
 
 compileKotlin2Js{
     kotlinOptions.moduleKind = "commonjs"
-    kotlinOptions.outputFile = "${project.projectDir}/node/cmapi.js"
+    kotlinOptions.outputFile = "${project.projectDir}/node/index.js"
+    kotlinOptions.sourceMap = true
 }
 
 node{
