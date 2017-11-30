@@ -1,7 +1,13 @@
 build/
 cmapi-kotlin-js/build/
 cmapi-kotlin-jvm/build/
-node
+cmapi-kotlin-js/node/index.js
+cmapi-kotlin-js/node/index.js.map
+cmapi-kotlin-js/node/index.meta.js
+cmapi-kotlin-js/node/index
+
+
+
 node_modules
 .idea/
 .gradle/
