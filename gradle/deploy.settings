@@ -1,5 +1,5 @@
 gitUrl=git@github.com:missioncommand/cmapi-kotlin.git
-groupId=cmapi-kotlin
+groupId=common-map-api.cmapi
 id=cmapi-kotlin
 siteUrl=https://github.com/missioncommand/cmapi-kotlin
 description=A port of the Common Map API for the Kotlin language, supporting both Java and Javascript in a single baseline.
