@@ -1,9 +1,33 @@
 apply plugin: 'kotlin-platform-js'
 apply from: "$project.rootDir/gradle/deploy.gradle"
 
+
 dependencies {
     expectedBy project(":")
 
     // Compile/implementation dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+}
+
+apply plugin: 'org.jetbrains.kotlin.frontend'
+
+kotlinFrontend {
+// uncomment this to specify exact nodejs version (bundle will be downloaded)
+//    downloadNodeJsVersion = "8.7.0"
+    sourceMaps = true
+
+    npm {
+        replaceVersion("kotlinx-html-js", "1.1.0")
+        replaceVersion("kotlinx-html-shared", "1.1.0")
+        replaceVersion("kotlin-js-library", "1.1.0")
+    }
+
+    webpackBundle {
+        bundleName = "emp3-web"
+        publicPath = "/"
+        port = 8080
+        proxyUrl = ""
+    }
+
+
 }
