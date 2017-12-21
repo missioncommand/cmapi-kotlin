@@ -5,3 +5,4 @@ cmapi-kotlin-jvm/build/
 .idea/
 .gradle/
 .idea/
+*.iml
