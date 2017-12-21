@@ -6,7 +6,7 @@ buildscript {
         jfrog_version = '1.7.3'
         kotlin_version = '1.2.0'
         // Release version of the artifact
-        release_version = '1.2.0.0'
+        release_version = '1.2.0.12-SNAPSHOT'
     }
     repositories {
         maven {
@@ -36,6 +36,11 @@ buildscript {
 
         //NPM and Webpack
         classpath "org.jetbrains.kotlin:kotlin-frontend-plugin:0.0.23"
+
+       //npm publish
+        classpath 'com.moowork.gradle:gradle-node-plugin:1.2.0'
+        //compiler options cmapi-kotlin-js-app
+        classpath "com.eriwen:gradle-js-plugin:2.14.1"
     }
 }
 
@@ -64,6 +69,10 @@ allprojects {
         maven {
             url 'http://dl.bintray.com/kotlin/kotlin-eap-1.2'
         }
+        //Node plugin URL
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
 }
 
@@ -72,4 +81,22 @@ dependencies {
     // source directory of the project root
     implementation "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
 
+}
+
+ext {
+    nodeVersion = '6.11.3'
+    qunitjsVersion = '2.4.0'
+    html_version = '0.6.6'
+    ktor_version = '0.3.0'
+    squash_version = '0.2.2'
+    libraries = [
+            junit: "junit:junit:4.12",
+            kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            kotlin_stdlib_common: "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version",
+            kotlin_stdlib_js: "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version",
+            kotlin_test_annotations_common: "org.jetbrains.kotlin:kotlin-test-annotations-common:$kotlin_version",
+            kotlin_test_common: "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version",
+            kotlin_test_js: "org.jetbrains.kotlin:kotlin-test-js:$kotlin_version",
+            kotlin_test_junit: "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    ]
 }
