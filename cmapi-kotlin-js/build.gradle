@@ -4,7 +4,6 @@ apply from: "$project.rootDir/gradle/deploy.gradle"
 
 dependencies {
     expectedBy project(":")
-
     // Compile/implementation dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
 }
@@ -26,8 +25,6 @@ kotlinFrontend {
 
     npm {
          dependency("kotlin")
-//        replaceVersion("kotlinx-html-js", "1.1.0")
-//        replaceVersion("kotlinx-html-shared", "1.1.0")
          replaceVersion("kotlin-js-library", "1.1.0")
 
     }
@@ -46,6 +43,10 @@ kotlinFrontend {
 
 apply plugin: "com.moowork.node"
 
+//Must copy the output javascript file
+//to the location that the package.json expects it to be
+//This is semi-workaround since I have not found a way to
+//configure the outputted package.json file
 task copyJSFile(type: Copy){
 
     from "$project.buildDir.path/js/"
@@ -53,6 +54,7 @@ task copyJSFile(type: Copy){
     include "*.js"
 }
 
+//We publish our dependencies to npm
 task npmPublish(dependsOn: copyJSFile, type: NpmTask) {
     description = "publishes the project to npm"
     workingDir = file("${project.buildDir}")

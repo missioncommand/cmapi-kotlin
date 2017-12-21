@@ -1,4 +1,3 @@
 rootProject.name = 'cmapi-kotlin'
 
 include 'cmapi-kotlin-jvm', 'cmapi-kotlin-js'
-//include 'cmapi-kotlin-jvm', 'cmapi-kotlin-js', 'cmapi-kotlin-js-app'
