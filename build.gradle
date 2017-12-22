@@ -6,7 +6,7 @@ buildscript {
         jfrog_version = '1.7.3'
         kotlin_version = '1.2.0'
         // Release version of the artifact
-        release_version = '1.3.0.0'
+        release_version = '1.2.0.13-SNAPSHOT'
     }
     repositories {
         maven {
@@ -94,6 +94,7 @@ ext {
             kotlin_stdlib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
             kotlin_stdlib_common: "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version",
             kotlin_stdlib_js: "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version",
+            kotlin_test: "org.jetbrains.kotlin:kotlin-test:$kotlin_version",
             kotlin_test_annotations_common: "org.jetbrains.kotlin:kotlin-test-annotations-common:$kotlin_version",
             kotlin_test_common: "org.jetbrains.kotlin:kotlin-test-common:$kotlin_version",
             kotlin_test_js: "org.jetbrains.kotlin:kotlin-test-js:$kotlin_version",

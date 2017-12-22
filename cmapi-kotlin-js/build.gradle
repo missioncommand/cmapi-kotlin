@@ -5,7 +5,7 @@ apply from: "$project.rootDir/gradle/deploy.gradle"
 dependencies {
     expectedBy project(":")
     // Compile/implementation dependencies
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    implementation libraries.kotlin_stdlib_js
 }
 
 apply plugin: 'org.jetbrains.kotlin.frontend'
@@ -59,4 +59,5 @@ task npmPublish(dependsOn: copyJSFile, type: NpmTask) {
     description = "publishes the project to npm"
     workingDir = file("${project.buildDir}")
     args = ['publish']
+
 }
