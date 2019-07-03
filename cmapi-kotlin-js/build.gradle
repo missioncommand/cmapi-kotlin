@@ -1,9 +1,63 @@
 apply plugin: 'kotlin-platform-js'
 apply from: "$project.rootDir/gradle/deploy.gradle"
 
+
 dependencies {
     expectedBy project(":")
-
     // Compile/implementation dependencies
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+    implementation libraries.kotlin_stdlib_js
+}
+
+apply plugin: 'org.jetbrains.kotlin.frontend'
+
+// configure kotlin compiler
+compileKotlin2Js {
+    kotlinOptions.metaInfo = true
+    kotlinOptions.sourceMap = true
+    kotlinOptions.moduleKind = 'commonjs'
+    kotlinOptions.outputFile = "$project.buildDir.path/js/${project.name}.js"
+}
+
+kotlinFrontend {
+// uncomment this to specify exact nodejs version (bundle will be downloaded)
+//    downloadNodeJsVersion = "8.7.0"
+    sourceMaps = true
+
+    npm {
+         dependency("kotlin")
+         replaceVersion("kotlin-js-library", "1.1.0")
+
+    }
+
+    define "PRODUCTION", true
+
+   webpackBundle {
+       bundleName = "${project.name}"
+       sourceMapEnabled = true
+       publicPath = "/"
+       port = 8080
+       proxyUrl = ""
+   }
+}
+
+
+apply plugin: "com.moowork.node"
+
+//Must copy the output javascript file
+//to the location that the package.json expects it to be
+//This is semi-workaround since I have not found a way to
+//configure the outputted package.json file
+task copyJSFile(type: Copy){
+
+    from "$project.buildDir.path/js/"
+    into "${project.buildDir}"
+    include "*.js"
+}
+
+//We publish our dependencies to npm
+task npmPublish(dependsOn: copyJSFile, type: NpmTask) {
+    description = "publishes the project to npm"
+    workingDir = file("${project.buildDir}")
+    args = ['publish']
+
 }

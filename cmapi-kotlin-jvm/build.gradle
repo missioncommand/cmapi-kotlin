@@ -13,12 +13,12 @@ dependencies {
     expectedBy project(":")
 
     // Compile/implementation dependencies
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation libraries.kotlin_stdlib
 
     // Test dependencies
-    testImplementation "junit:junit:4.12"
-    testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
-    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation libraries.junit
+    testImplementation libraries.kotlin_test
+    testImplementation libraries.kotlin_test_junit
 
     //shadow jar dependencies
     shadow 'junit:junit:3.8.2'
